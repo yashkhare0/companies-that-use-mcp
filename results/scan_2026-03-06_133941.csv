@@ -1,0 +1,11 @@
+domain,has_api,has_mcp,mcp_auth_type,mcp_sdk,mcp_transport,tools_count,tools_list,security_issues,outreach_priority,outreach_reason
+shopify.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+clickup.com,true,true,oauth,unknown,unknown,,,WIDE_OPEN_CORS,medium,"Has MCP but only  tools — early stage, needs better builder"
+segment.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+deepl.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+freshdesk.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+railway.app,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+courier.com,true,true,none,Official TS,streamable_http,33,"[""get_audience"",""list_audience_members"",""list_audiences"",""generate_jwt_for_user"",""invoke_automation_template"",""create_brand"",""get_brand"",""list_brands"",""courier_installation_guide"",""list_lists"",""get_list"",""get_list_subscribers"",""create_list"",""subscribe_user_to_list"",""unsubscribe_user_from_list"",""list_messages"",""get_message"",""get_message_content"",""list_notifications"",""get_notification_content"",""get_notification_draft_content"",""get_user_profile_by_id"",""create_or_merge_user"",""get_user_list_subscriptions"",""subscribe_user_to_lists"",""delete_user_list_subscriptions"",""send_message"",""send_message_template"",""send_message_to_list"",""send_message_to_list_template"",""list_user_push_tokens"",""get_user_push_token"",""create_or_replace_user_push_token""]","NO_AUTH, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+square.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+ghost.org,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+make.com,false,true,oauth,unknown,unknown,,,"WIDE_OPEN_CORS, NO_RATE_LIMIT",low,MCP-first company — already building
