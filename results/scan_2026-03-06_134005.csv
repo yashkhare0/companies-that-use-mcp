@@ -1,0 +1,101 @@
+domain,has_api,has_mcp,mcp_auth_type,mcp_sdk,mcp_transport,tools_count,tools_list,security_issues,outreach_priority,outreach_reason
+stripe.com,true,true,oauth,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+cloudflare.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+hubspot.com,true,true,unknown,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+twilio.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+sendgrid.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+intercom.com,false,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,low,MCP-first company — already building
+zendesk.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+freshdesk.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+notion.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+airtable.com,true,true,unknown,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+linear.app,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+figma.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+vercel.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+netlify.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+supabase.com,true,true,oauth,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+planetscale.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+datadog.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+sentry.io,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+pagerduty.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+gitlab.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+bitbucket.org,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+jira.atlassian.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+asana.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+monday.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+clickup.com,true,true,oauth,unknown,unknown,,,WIDE_OPEN_CORS,medium,"Has MCP but only  tools — early stage, needs better builder"
+calendly.com,true,true,oauth,FastMCP,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+typeform.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+mailchimp.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+brevo.com,true,true,unknown,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+postmark.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+plaid.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+square.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+shopify.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+woocommerce.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+bigcommerce.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+contentful.com,true,true,oauth,CF Workers,unknown,,,"WIDE_OPEN_CORS, NO_RATE_LIMIT",medium,"Has MCP but only  tools — early stage, needs better builder"
+sanity.io,true,true,oauth,unknown,unknown,,,"WIDE_OPEN_CORS, NO_RATE_LIMIT",medium,"Has MCP but only  tools — early stage, needs better builder"
+strapi.io,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+ghost.org,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+webflow.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+zapier.com,true,true,unknown,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+make.com,false,true,oauth,unknown,unknown,,,"WIDE_OPEN_CORS, NO_RATE_LIMIT",low,MCP-first company — already building
+pipedrive.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+salesforce.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+zoho.com,true,true,unknown,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+amplitude.com,true,true,oauth,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+mixpanel.com,true,true,oauth,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+segment.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+posthog.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+loom.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+miro.com,true,true,api_key,unknown,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+canva.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+grammarly.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+deepl.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+openai.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+anthropic.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+cohere.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+replicate.com,true,true,oauth,CF Workers,unknown,,,NO_RATE_LIMIT,medium,"Has MCP but only  tools — early stage, needs better builder"
+together.ai,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+anyscale.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+langchain.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+pinecone.io,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+weaviate.io,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+qdrant.tech,true,true,none,FastMCP,streamable_http,1,"[""qdrant-find""]","NO_AUTH, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+chroma.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+render.com,true,true,none,Official TS,streamable_http,24,"[""create_cron_job"",""create_key_value"",""create_postgres"",""create_static_site"",""create_web_service"",""get_deploy"",""get_key_value"",""get_metrics"",""get_postgres"",""get_selected_workspace"",""get_service"",""list_deploys"",""list_key_value"",""list_log_label_values"",""list_logs"",""list_postgres_instances"",""list_services"",""list_workspaces"",""query_render_postgres"",""select_workspace"",""update_cron_job"",""update_environment_variables"",""update_static_site"",""update_web_service""]","NO_AUTH, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+railway.app,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+fly.io,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+heroku.com,true,true,api_key,unknown,unknown,,,"",medium,"Has MCP but only  tools — early stage, needs better builder"
+digitalocean.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+linode.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+vultr.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+hetzner.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+ovhcloud.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+auth0.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+okta.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+clerk.com,true,true,none,Official TS,streamable_http,2,"[""clerk_sdk_snippet"",""list_clerk_sdk_snippets""]","NO_AUTH, WIDE_OPEN_CORS, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+stytch.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+firebase.google.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+algolia.com,false,true,oauth,unknown,unknown,,,NO_RATE_LIMIT,low,MCP-first company — already building
+meilisearch.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+elasticsearch.co,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+twitch.tv,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+discord.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+slack.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+telegram.org,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+whatsapp.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+signal.org,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+zoom.us,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+whereby.com,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+agora.io,true,true,none,Official TS,streamable_http,3,"[""algolia_search_for_facet_values"",""algolia_search_index_docs_platform_aware_markdown"",""algolia_recommendations""]","NO_AUTH, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+stream.io,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+livekit.io,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+daily.co,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+100ms.live,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+ably.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+pusher.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
+novu.co,true,false,unknown,unknown,unknown,,,"",high,Has API but no MCP — ready for MCP adoption
+courier.com,true,true,none,Official TS,streamable_http,33,"[""get_audience"",""list_audience_members"",""list_audiences"",""generate_jwt_for_user"",""invoke_automation_template"",""create_brand"",""get_brand"",""list_brands"",""courier_installation_guide"",""list_lists"",""get_list"",""get_list_subscribers"",""create_list"",""subscribe_user_to_list"",""unsubscribe_user_from_list"",""list_messages"",""get_message"",""get_message_content"",""list_notifications"",""get_notification_content"",""get_notification_draft_content"",""get_user_profile_by_id"",""create_or_merge_user"",""get_user_list_subscriptions"",""subscribe_user_to_lists"",""delete_user_list_subscriptions"",""send_message"",""send_message_template"",""send_message_to_list"",""send_message_to_list_template"",""list_user_push_tokens"",""get_user_push_token"",""create_or_replace_user_push_token""]","NO_AUTH, NO_RATE_LIMIT",high,"Has MCP but NO AUTH — security risk, needs Drio"
+knocklabs.com,false,false,unknown,unknown,unknown,,,"",medium,No API or MCP — could use Drio as first AI integration
