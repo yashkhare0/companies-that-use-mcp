@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-12T00:00:48Z",
+  "output_path": "data/processed/test_universe.txt",
+  "total_unique_domains": 2300,
+  "sources": {
+    "top_1m": 2000,
+    "curated": 317,
+    "yc_saas": 50
+  }
+}

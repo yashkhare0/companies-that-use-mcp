@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-12T11:18:55.911439+00:00",
+  "total_records": 712,
+  "sources": [
+    "hv_capital",
+    "point_nine",
+    "project_a",
+    "seedcamp",
+    "speedinvest"
+  ],
+  "outputs": {
+    "txt": "data\\processed\\portfolio_smoke.txt",
+    "csv": "data\\processed\\portfolio_smoke.csv",
+    "jsonl": "data\\processed\\portfolio_smoke.jsonl"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-12T08:20:48Z",
+  "candidates_path": "data/processed/icp_test.csv",
+  "prefilter_path": "data/processed/digital_first_20260312_081645.csv",
+  "output_prefix": "data/processed/pre_vetted_yc_test",
+  "selected_candidates": 58,
+  "allowed_sources": [
+    "yc_"
+  ],
+  "min_icp_score": 12,
+  "max_team_size": 2500
+}

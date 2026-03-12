@@ -2,16 +2,44 @@
 
 A Ruby script that probes domains for MCP servers and fingerprints their SDK, authentication method, transport protocol, security posture, and exposed tools.
 
-Built to power the research behind **[We analyzed 1,400 MCP servers — here's what we learned](https://bloomberry.com/blog/we-analyzed-1400-mcp-servers-heres-what-we-learned/)**.
+Built to power the research behind [We analyzed 1,400 MCP servers - here's what we learned](https://bloomberry.com/blog/we-analyzed-1400-mcp-servers-heres-what-we-learned/).
 
-A live list of known MCP server domains (updated regularly) is available at **[bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/)**.
+A live list of known MCP server domains (updated regularly) is available at [bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/).
 
 ---
 
 ## Requirements
 
 - Ruby 2.3+
-- No gems — stdlib only (`net/http`, `openssl`, `uri`, `json`, `resolv`, `timeout`)
+- `mcp_scanner.rb` itself uses only Ruby stdlib: `net/http`, `openssl`, `uri`, `json`, `resolv`, `timeout`
+- `setup_db.rb` and `scan_to_db.rb` also require the `sqlite3` Ruby gem
+
+### Docker
+
+If you want an isolated runtime instead of installing Ruby locally, use Docker Desktop:
+
+```bash
+# Build the image
+docker compose build
+
+# Initialize the database
+docker compose run --rm mcp-scanner ruby setup_db.rb
+
+# Build a seed domain list
+docker compose run --rm mcp-scanner ruby build_domains.rb > domains_full.txt
+
+# Scan all domains into mcp_scans.db
+docker compose run --rm mcp-scanner ruby scan_to_db.rb domains_full.txt
+
+# Show DB stats
+docker compose run --rm mcp-scanner ruby scan_to_db.rb --stats
+
+# Export all latest rows or just the highest-priority prospects
+docker compose run --rm mcp-scanner ruby scan_to_db.rb --export all
+docker compose run --rm mcp-scanner ruby scan_to_db.rb --export high
+```
+
+The compose service mounts this repo into the container, so `mcp_scans.db` and `results/` stay on the host.
 
 ---
 
@@ -43,7 +71,7 @@ analyzeMcp(domains, 50)
 
 # Probe a single domain and inspect the raw result hash
 result = getMcpStatus("stripe.com")
-pp result['mcp']
+pp result["mcp"]
 ```
 
 ---
@@ -78,7 +106,7 @@ For each domain, the scanner:
 
 A summary report is printed after all domains are scanned:
 
-```
+```text
 ==================================================
 MCP SCAN RESULTS
 --------------------------------------------------
@@ -102,21 +130,27 @@ API key  : 12 (28.6%)
 
 ## Getting a domain list
 
-The easiest way to get started is to download the curated list of known MCP server domains from **[bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/)**, save it as `domains.txt` (one domain per line), and run:
+The easiest way to get started is to download the curated list of known MCP server domains from [bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/), save it as `domains.txt` (one domain per line), and run:
 
 ```bash
 ruby mcp_scanner.rb < domains.txt
 ```
 
+This repo also includes:
+
+- `build_domains.rb` to emit a curated broader seed list into `domains_full.txt`
+- `scan_to_db.rb` to scan domains into `mcp_scans.db`
+- `scope_prospects.rb` to scan and write a CSV prospect list into `results/`
+
 ---
 
 ## Methodology notes
 
-- Discovery is based on `mcp.*` subdomains — a strong signal that a company is making a deliberate commitment to MCP (vs. an internal or staging server)
+- Discovery is based on `mcp.*` subdomains, a strong signal that a company is making a deliberate commitment to MCP versus an internal or staging server
 - SSL certificate errors are ignored (`VERIFY_NONE`) since many MCP servers use self-signed certs
 - A bogus subdomain check is performed to guard against wildcard DNS responses
-- Per-domain timeout is 15 seconds
-- The full methodology is described in the [blog post](https://bloomberry.com/blog/we-analyzed-1400-mcp-servers-heres-what-we-learned/)
+- Per-domain timeout is 15 seconds in `mcp_scanner.rb` and 20 seconds in the higher-level wrappers
+- The full methodology is described in the blog post linked above
 
 ---
 

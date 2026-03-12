@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-03-12T08:07:57Z",
+  "output_prefix": "data/processed/icp_test",
+  "top_limit": 5000,
+  "total_candidates": 5445,
+  "source_counts": {
+    "top_1m": 5000,
+    "curated": 317,
+    "yc_saas": 50,
+    "yc_b2b": 49,
+    "yc_fintech": 50,
+    "yc_developer_tools": 50,
+    "yc_artificial_intelligence": 50,
+    "yc_security": 50,
+    "yc_productivity": 50,
+    "yc_directory": 0,
+    "angelpad_portfolio": 0,
+    "angelpad_saas": 0
+  },
+  "outputs": {
+    "txt": "data/processed/icp_test.txt",
+    "csv": "data/processed/icp_test.csv",
+    "jsonl": "data/processed/icp_test.jsonl"
+  }
+}

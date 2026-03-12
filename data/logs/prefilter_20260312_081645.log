@@ -1,0 +1,13 @@
+[2026-03-12T08:16:45Z] Prefilter started: input=data/processed/icp_test.txt domains=5445 workers=40
+[2026-03-12T08:16:53Z] Progress: processed=500/5445 kept=315 wildcard_skipped=79 weak_signal_skipped=34
+[2026-03-12T08:17:01Z] Progress: processed=1000/5445 kept=538 wildcard_skipped=138 weak_signal_skipped=49
+[2026-03-12T08:17:11Z] Progress: processed=1500/5445 kept=726 wildcard_skipped=191 weak_signal_skipped=69
+[2026-03-12T08:17:24Z] Progress: processed=2000/5445 kept=952 wildcard_skipped=241 weak_signal_skipped=95
+[2026-03-12T08:17:34Z] Progress: processed=2500/5445 kept=1123 wildcard_skipped=299 weak_signal_skipped=115
+[2026-03-12T08:17:44Z] Progress: processed=3000/5445 kept=1346 wildcard_skipped=367 weak_signal_skipped=149
+[2026-03-12T08:17:54Z] Progress: processed=3500/5445 kept=1571 wildcard_skipped=418 weak_signal_skipped=164
+[2026-03-12T08:18:05Z] Progress: processed=4000/5445 kept=1788 wildcard_skipped=478 weak_signal_skipped=184
+[2026-03-12T08:18:15Z] Progress: processed=4500/5445 kept=2007 wildcard_skipped=525 weak_signal_skipped=212
+[2026-03-12T08:18:26Z] Progress: processed=5000/5445 kept=2246 wildcard_skipped=584 weak_signal_skipped=231
+[2026-03-12T08:18:44Z] Progress: processed=5445/5445 kept=2409 wildcard_skipped=655 weak_signal_skipped=248
+[2026-03-12T08:18:44Z] Prefilter complete: kept=2409 txt=/app/data/processed/digital_first_20260312_081645.txt csv=/app/data/processed/digital_first_20260312_081645.csv

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-12T11:40:47.092667+00:00",
+  "total_records": 1060,
+  "sources": [
+    "hv_capital",
+    "point_nine",
+    "project_a",
+    "seedcamp",
+    "speedinvest"
+  ],
+  "outputs": {
+    "txt": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\portfolio_candidates_20260312_114018.txt",
+    "csv": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\portfolio_candidates_20260312_114018.csv",
+    "jsonl": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\portfolio_candidates_20260312_114018.jsonl"
+  }
+}

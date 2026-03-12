@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-03-12T00:01:57Z",
+  "input_path": "data/processed/test_universe.txt",
+  "output_txt": "/app/data/processed/digital_first_20260312_000110.txt",
+  "output_csv": "/app/data/processed/digital_first_20260312_000110.csv",
+  "total_domains": 2300,
+  "kept_domains": 1438,
+  "workers": 40,
+  "signals": [
+    "api",
+    "app",
+    "docs",
+    "developer",
+    "developers",
+    "status",
+    "auth",
+    "dashboard",
+    "platform",
+    "console"
+  ]
+}

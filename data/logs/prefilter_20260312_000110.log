@@ -1,0 +1,5 @@
+[2026-03-12T00:01:10Z] Prefilter started: input=data/processed/test_universe.txt domains=2300 workers=40
+[2026-03-12T00:01:24Z] Progress: processed=1000/2300 kept=617
+[2026-03-12T00:01:39Z] Progress: processed=2000/2300 kept=1251
+[2026-03-12T00:01:57Z] Progress: processed=2300/2300 kept=1438
+[2026-03-12T00:01:57Z] Prefilter complete: kept=1438 txt=/app/data/processed/digital_first_20260312_000110.txt csv=/app/data/processed/digital_first_20260312_000110.csv

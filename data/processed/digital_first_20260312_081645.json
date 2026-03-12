@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-12T08:18:44Z",
+  "input_path": "data/processed/icp_test.txt",
+  "output_txt": "/app/data/processed/digital_first_20260312_081645.txt",
+  "output_csv": "/app/data/processed/digital_first_20260312_081645.csv",
+  "total_domains": 5445,
+  "kept_domains": 2409,
+  "wildcard_skipped": 655,
+  "weak_signal_skipped": 248,
+  "workers": 40,
+  "signals": {
+    "high_trust": [
+      "api",
+      "docs",
+      "developer",
+      "developers",
+      "auth",
+      "platform",
+      "console"
+    ],
+    "medium_trust": [
+      "app",
+      "dashboard"
+    ],
+    "low_trust": [
+      "status"
+    ]
+  }
+}

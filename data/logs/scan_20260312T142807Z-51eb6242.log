@@ -1,0 +1,985 @@
+[2026-03-12T14:28:07Z] Prospect scan started
+[2026-03-12T14:28:07Z] Run ID: 20260312T142807Z-51eb6242
+[2026-03-12T14:28:07Z] Source file: data/processed/pre_vetted_portfolio_expand.txt
+[2026-03-12T14:28:07Z] Input domains: 324
+[2026-03-12T14:28:07Z] Domains scheduled: 324
+[2026-03-12T14:28:07Z] Domains skipped today: 0
+[2026-03-12T14:28:07Z] [1/324] tinfoil.sh
+[2026-03-12T14:28:07Z]   api.tinfoil.sh: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [2/324] specific.dev
+[2026-03-12T14:28:07Z]   api.specific.dev: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [3/324] oneleet.com
+[2026-03-12T14:28:07Z]   api.oneleet.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [4/324] better-auth.com
+[2026-03-12T14:28:07Z]   api.better-auth.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [5/324] qfex.com
+[2026-03-12T14:28:07Z]   api.qfex.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [6/324] usedari.com
+[2026-03-12T14:28:07Z]   api.usedari.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [7/324] endclose.com
+[2026-03-12T14:28:07Z]   api.endclose.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [8/324] hyperspell.com
+[2026-03-12T14:28:07Z]   api.hyperspell.com: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [9/324] usechamber.io
+[2026-03-12T14:28:07Z]   api.usechamber.io: yes
+[2026-03-12T14:28:07Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:07Z] [10/324] byteport.io
+[2026-03-12T14:28:07Z]   api.byteport.io: no
+[2026-03-12T14:28:07Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:07Z] [11/324] corelayer.com
+[2026-03-12T14:28:07Z]   api.corelayer.com: yes
+[2026-03-12T14:28:08Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:08Z] [12/324] terminaluse.com
+[2026-03-12T14:28:08Z]   api.terminaluse.com: yes
+[2026-03-12T14:28:08Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:08Z] [13/324] unifold.io
+[2026-03-12T14:28:08Z]   api.unifold.io: yes
+[2026-03-12T14:28:08Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:08Z] [14/324] argalabs.com
+[2026-03-12T14:28:08Z]   api.argalabs.com: yes
+[2026-03-12T14:28:08Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:08Z] [15/324] dedaluslabs.ai
+[2026-03-12T14:28:08Z]   api.dedaluslabs.ai: yes
+[2026-03-12T14:28:09Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:09Z] [16/324] didit.me
+[2026-03-12T14:28:09Z]   api.didit.me: yes
+[2026-03-12T14:28:09Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:09Z] [17/324] usekestrel.ai
+[2026-03-12T14:28:09Z]   api.usekestrel.ai: no
+[2026-03-12T14:28:09Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:09Z] [18/324] zeropath.com
+[2026-03-12T14:28:09Z]   api.zeropath.com: no
+[2026-03-12T14:28:09Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:09Z] [19/324] compresr.ai
+[2026-03-12T14:28:09Z]   api.compresr.ai: yes
+[2026-03-12T14:28:09Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:09Z] [20/324] getadri.ai
+[2026-03-12T14:28:10Z]   api.getadri.ai: yes
+[2026-03-12T14:28:10Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:10Z] [21/324] runanywhere.ai
+[2026-03-12T14:28:10Z]   api.runanywhere.ai: no
+[2026-03-12T14:28:10Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:10Z] [22/324] sentrial.com
+[2026-03-12T14:28:10Z]   api.sentrial.com: yes
+[2026-03-12T14:28:10Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:10Z] [23/324] sequencemkts.com
+[2026-03-12T14:28:10Z]   api.sequencemkts.com: yes
+[2026-03-12T14:28:12Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:12Z] [24/324] shortkit.dev
+[2026-03-12T14:28:12Z]   api.shortkit.dev: yes
+[2026-03-12T14:28:12Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:12Z] [25/324] usemoss.dev
+[2026-03-12T14:28:12Z]   api.usemoss.dev: yes
+[2026-03-12T14:28:12Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:12Z] [26/324] veritus.com
+[2026-03-12T14:28:12Z]   api.veritus.com: no
+[2026-03-12T14:28:12Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:12Z] [27/324] agenticfabriq.com
+[2026-03-12T14:28:12Z]   api.agenticfabriq.com: no
+[2026-03-12T14:28:12Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:12Z] [28/324] arzana.ai
+[2026-03-12T14:28:12Z]   api.arzana.ai: no
+[2026-03-12T14:28:12Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:12Z] [29/324] arzule.com
+[2026-03-12T14:28:12Z]   api.arzule.com: no
+[2026-03-12T14:28:12Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:12Z] [30/324] cotool.ai
+[2026-03-12T14:28:12Z]   api.cotool.ai: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [31/324] overwatchdata.ai
+[2026-03-12T14:28:13Z]   api.overwatchdata.ai: yes
+[2026-03-12T14:28:13Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:13Z] [32/324] pally.com
+[2026-03-12T14:28:13Z]   api.pally.com: yes
+[2026-03-12T14:28:13Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:13Z] [33/324] sourcebot.dev
+[2026-03-12T14:28:13Z]   api.sourcebot.dev: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [34/324] syntheticsciences.ai
+[2026-03-12T14:28:13Z]   api.syntheticsciences.ai: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [35/324] 10xscience.com
+[2026-03-12T14:28:13Z]   api.10xscience.com: yes
+[2026-03-12T14:28:13Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:13Z] [36/324] alterai.dev
+[2026-03-12T14:28:13Z]   api.alterai.dev: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [37/324] maywoodai.com
+[2026-03-12T14:28:13Z]   api.maywoodai.com: yes
+[2026-03-12T14:28:13Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:13Z] [38/324] ashr.io
+[2026-03-12T14:28:13Z]   api.ashr.io: yes
+[2026-03-12T14:28:13Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:13Z] [39/324] cinder.co
+[2026-03-12T14:28:13Z]   api.cinder.co: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [40/324] cofia.ai
+[2026-03-12T14:28:13Z]   api.cofia.ai: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [41/324] crosslayerlabs.com
+[2026-03-12T14:28:13Z]   api.crosslayerlabs.com: no
+[2026-03-12T14:28:13Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:13Z] [42/324] paysponge.com
+[2026-03-12T14:28:13Z]   api.paysponge.com: yes
+[2026-03-12T14:28:14Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:14Z] [43/324] ralo.com
+[2026-03-12T14:28:14Z]   api.ralo.com: no
+[2026-03-12T14:28:14Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:14Z] [44/324] realitydefender.com
+[2026-03-12T14:28:14Z]   api.realitydefender.com: no
+[2026-03-12T14:28:14Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:14Z] [45/324] rhizomeai.com
+[2026-03-12T14:28:14Z]   api.rhizomeai.com: no
+[2026-03-12T14:28:14Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:14Z] [46/324] runcanary.ai
+[2026-03-12T14:28:14Z]   api.runcanary.ai: yes
+[2026-03-12T14:28:14Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:14Z] [47/324] trace.so
+[2026-03-12T14:28:14Z]   api.trace.so: yes
+[2026-03-12T14:28:14Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:14Z] [48/324] podium.com
+[2026-03-12T14:28:14Z]   api.podium.com: yes
+[2026-03-12T14:28:14Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:14Z] [49/324] amplitude.com
+[2026-03-12T14:28:14Z]   api.amplitude.com: yes
+[2026-03-12T14:28:17Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:17Z] [50/324] checkr.com
+[2026-03-12T14:28:17Z]   api.checkr.com: yes
+[2026-03-12T14:28:17Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:17Z] [51/324] brex.com
+[2026-03-12T14:28:17Z]   api.brex.com: yes
+[2026-03-12T14:28:17Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:17Z] [52/324] zapier.com
+[2026-03-12T14:28:17Z]   api.zapier.com: yes
+[2026-03-12T14:28:18Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:18Z] [53/324] bird.com
+[2026-03-12T14:28:18Z]   api.bird.com: yes
+[2026-03-12T14:28:18Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:18Z] [54/324] gusto.com
+[2026-03-12T14:28:18Z]   api.gusto.com: yes
+[2026-03-12T14:28:18Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:18Z] [55/324] gitlab.com
+[2026-03-12T14:28:18Z]   api.gitlab.com: no
+[2026-03-12T14:28:18Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:18Z] [56/324] wave.com
+[2026-03-12T14:28:18Z]   api.wave.com: yes
+[2026-03-12T14:28:18Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:18Z] [57/324] algolia.com
+[2026-03-12T14:28:18Z]   api.algolia.com: no
+[2026-03-12T14:28:19Z]   result: api=0 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:19Z] [58/324] getweave.com
+[2026-03-12T14:28:19Z]   api.getweave.com: no
+[2026-03-12T14:28:19Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:19Z] [59/324] yapily.com
+[2026-03-12T14:28:19Z]   api.yapily.com: yes
+[2026-03-12T14:28:19Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:19Z] [60/324] omnea.co
+[2026-03-12T14:28:19Z]   api.omnea.co: yes
+[2026-03-12T14:28:19Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:19Z] [61/324] revolut.com
+[2026-03-12T14:28:19Z]   api.revolut.com: yes
+[2026-03-12T14:28:19Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:19Z] [62/324] rekordsoftware.com
+[2026-03-12T14:28:19Z]   api.rekordsoftware.com: no
+[2026-03-12T14:28:19Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:19Z] [63/324] rvvup.com
+[2026-03-12T14:28:19Z]   api.rvvup.com: yes
+[2026-03-12T14:28:19Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:19Z] [64/324] upvest.co
+[2026-03-12T14:28:19Z]   api.upvest.co: yes
+[2026-03-12T14:28:19Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:19Z] [65/324] getbux.com
+[2026-03-12T14:28:19Z]   api.getbux.com: no
+[2026-03-12T14:28:19Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:19Z] [66/324] exporo.de
+[2026-03-12T14:28:20Z]   api.exporo.de: no
+[2026-03-12T14:28:20Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:20Z] [67/324] boku.com
+[2026-03-12T14:28:20Z]   api.boku.com: no
+[2026-03-12T14:28:20Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:20Z] [68/324] claimsforce.com
+[2026-03-12T14:28:20Z]   api.claimsforce.com: yes
+[2026-03-12T14:28:20Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:20Z] [69/324] qonto.com
+[2026-03-12T14:28:20Z]   api.qonto.com: yes
+[2026-03-12T14:28:20Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:20Z] [70/324] sumup.com
+[2026-03-12T14:28:20Z]   api.sumup.com: yes
+[2026-03-12T14:28:21Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:21Z] [71/324] candis.io
+[2026-03-12T14:28:21Z]   api.candis.io: yes
+[2026-03-12T14:28:21Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:21Z] [72/324] comet.rocks
+[2026-03-12T14:28:21Z]   api.comet.rocks: no
+[2026-03-12T14:28:21Z]   result: api=0 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:21Z] [73/324] payrails.com
+[2026-03-12T14:28:21Z]   api.payrails.com: no
+[2026-03-12T14:28:21Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:21Z] [74/324] funanga.com
+[2026-03-12T14:28:21Z]   api.funanga.com: no
+[2026-03-12T14:28:22Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:22Z] [75/324] midas.app
+[2026-03-12T14:28:22Z]   api.midas.app: no
+[2026-03-12T14:28:22Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:22Z] [76/324] gigs.com
+[2026-03-12T14:28:22Z]   api.gigs.com: yes
+[2026-03-12T14:28:22Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:22Z] [77/324] atlassian.com
+[2026-03-12T14:28:22Z]   api.atlassian.com: yes
+[2026-03-12T14:28:22Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:22Z] [78/324] brevo.com
+[2026-03-12T14:28:22Z]   api.brevo.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:23Z] [79/324] moonpay.com
+[2026-03-12T14:28:23Z]   api.moonpay.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [80/324] avatao.com
+[2026-03-12T14:28:23Z]   api.avatao.com: no
+[2026-03-12T14:28:23Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:23Z] [81/324] bitpanda.com
+[2026-03-12T14:28:23Z]   api.bitpanda.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [82/324] mews.com
+[2026-03-12T14:28:23Z]   api.mews.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [83/324] tide.co
+[2026-03-12T14:28:23Z]   api.tide.co: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [84/324] wayflyer.com
+[2026-03-12T14:28:23Z]   api.wayflyer.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [85/324] autone.io
+[2026-03-12T14:28:23Z]   api.autone.io: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [86/324] dragandbot.com
+[2026-03-12T14:28:23Z]   api.dragandbot.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [87/324] bitmovin.com
+[2026-03-12T14:28:23Z]   api.bitmovin.com: yes
+[2026-03-12T14:28:23Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:23Z] [88/324] estateguru.co
+[2026-03-12T14:28:23Z]   api.estateguru.co: no
+[2026-03-12T14:28:23Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:24Z] [89/324] getrollee.com
+[2026-03-12T14:28:24Z]   api.getrollee.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [90/324] godiligent.ai
+[2026-03-12T14:28:24Z]   api.godiligent.ai: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [91/324] holvi.com
+[2026-03-12T14:28:24Z]   api.holvi.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [92/324] navan.com
+[2026-03-12T14:28:24Z]   api.navan.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [93/324] precium.com
+[2026-03-12T14:28:24Z]   api.precium.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [94/324] primer.io
+[2026-03-12T14:28:24Z]   api.primer.io: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [95/324] telleroo.com
+[2026-03-12T14:28:24Z]   api.telleroo.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [96/324] tower.dev
+[2026-03-12T14:28:24Z]   api.tower.dev: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [97/324] yoummday.com
+[2026-03-12T14:28:24Z]   api.yoummday.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [98/324] alvin.ai
+[2026-03-12T14:28:24Z]   api.alvin.ai: no
+[2026-03-12T14:28:24Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:24Z] [99/324] azowo.com
+[2026-03-12T14:28:24Z]   api.azowo.com: yes
+[2026-03-12T14:28:24Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:24Z] [100/324] getbyrd.com
+[2026-03-12T14:28:24Z]   api.getbyrd.com: yes
+[2026-03-12T14:28:25Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:25Z] Checkpoint: scanned=100 api=68 mcp=9 prospects=61
+[2026-03-12T14:28:25Z] [101/324] liqid.de
+[2026-03-12T14:28:25Z]   api.liqid.de: yes
+[2026-03-12T14:28:25Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:25Z] [102/324] octav.fi
+[2026-03-12T14:28:25Z]   api.octav.fi: yes
+[2026-03-12T14:28:25Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:25Z] [103/324] riverse.io
+[2026-03-12T14:28:25Z]   api.riverse.io: no
+[2026-03-12T14:28:25Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:25Z] [104/324] unweave.io
+[2026-03-12T14:28:25Z]   api.unweave.io: yes
+[2026-03-12T14:28:25Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:25Z] [105/324] vocca.ai
+[2026-03-12T14:28:25Z]   api.vocca.ai: yes
+[2026-03-12T14:28:25Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:25Z] [106/324] conundrum.ai
+[2026-03-12T14:28:25Z]   api.conundrum.ai: no
+[2026-03-12T14:28:25Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:25Z] [107/324] dialpad.com
+[2026-03-12T14:28:25Z]   api.dialpad.com: no
+[2026-03-12T14:28:27Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:27Z] [108/324] klara.com
+[2026-03-12T14:28:27Z]   api.klara.com: yes
+[2026-03-12T14:28:28Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:28Z] [109/324] runware.ai
+[2026-03-12T14:28:28Z]   api.runware.ai: yes
+[2026-03-12T14:28:28Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:28Z] [110/324] tenyks.ai
+[2026-03-12T14:28:28Z]   api.tenyks.ai: no
+[2026-03-12T14:28:28Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:28Z] [111/324] 10pourcent.fr
+[2026-03-12T14:28:28Z]   api.10pourcent.fr: yes
+[2026-03-12T14:28:28Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:28Z] [112/324] asap.work
+[2026-03-12T14:28:28Z]   api.asap.work: yes
+[2026-03-12T14:28:28Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:28Z] [113/324] bitfount.com
+[2026-03-12T14:28:28Z]   api.bitfount.com: no
+[2026-03-12T14:28:28Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:28Z] [114/324] boltzbit.com
+[2026-03-12T14:28:28Z]   api.boltzbit.com: no
+[2026-03-12T14:28:28Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:28Z] [115/324] cegid.com
+[2026-03-12T14:28:28Z]   api.cegid.com: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [116/324] flowdesk.co
+[2026-03-12T14:28:29Z]   api.flowdesk.co: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [117/324] haaven.com
+[2026-03-12T14:28:29Z]   api.haaven.com: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [118/324] julaya.co
+[2026-03-12T14:28:29Z]   api.julaya.co: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [119/324] leta.ai
+[2026-03-12T14:28:29Z]   api.leta.ai: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [120/324] onetrust.com
+[2026-03-12T14:28:29Z]   api.onetrust.com: no
+[2026-03-12T14:28:29Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:29Z] [121/324] pactum.com
+[2026-03-12T14:28:29Z]   api.pactum.com: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [122/324] shapr3d.com
+[2026-03-12T14:28:29Z]   api.shapr3d.com: no
+[2026-03-12T14:28:29Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:29Z] [123/324] talkjs.com
+[2026-03-12T14:28:29Z]   api.talkjs.com: yes
+[2026-03-12T14:28:29Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:29Z] [124/324] tourradar.com
+[2026-03-12T14:28:30Z]   api.tourradar.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [125/324] abwab.ai
+[2026-03-12T14:28:30Z]   api.abwab.ai: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [126/324] adverity.com
+[2026-03-12T14:28:30Z]   api.adverity.com: no
+[2026-03-12T14:28:30Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:30Z] [127/324] blocktorch.xyz
+[2026-03-12T14:28:30Z]   api.blocktorch.xyz: no
+[2026-03-12T14:28:30Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:30Z] [128/324] consola.finance
+[2026-03-12T14:28:30Z]   api.consola.finance: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [129/324] finary.com
+[2026-03-12T14:28:30Z]   api.finary.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [130/324] getoze.com
+[2026-03-12T14:28:30Z]   api.getoze.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [131/324] getpliant.com
+[2026-03-12T14:28:30Z]   api.getpliant.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [132/324] investly.co
+[2026-03-12T14:28:30Z]   api.investly.co: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [133/324] kema.co
+[2026-03-12T14:28:30Z]   api.kema.co: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [134/324] kittl.com
+[2026-03-12T14:28:30Z]   api.kittl.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [135/324] lemonflow.ai
+[2026-03-12T14:28:30Z]   api.lemonflow.ai: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [136/324] lizzy-ai.com
+[2026-03-12T14:28:30Z]   api.lizzy-ai.com: yes
+[2026-03-12T14:28:30Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:30Z] [137/324] metycle.com
+[2026-03-12T14:28:31Z]   api.metycle.com: no
+[2026-03-12T14:28:31Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:31Z] [138/324] pacerevenue.com
+[2026-03-12T14:28:31Z]   api.pacerevenue.com: yes
+[2026-03-12T14:28:31Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:31Z] [139/324] prewave.ai
+[2026-03-12T14:28:31Z]   api.prewave.ai: yes
+[2026-03-12T14:28:31Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:31Z] [140/324] rival.tech
+[2026-03-12T14:28:31Z]   api.rival.tech: no
+[2026-03-12T14:28:32Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:32Z] [141/324] rivia.ch
+[2026-03-12T14:28:32Z]   api.rivia.ch: no
+[2026-03-12T14:28:32Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:32Z] [142/324] sona.is
+[2026-03-12T14:28:32Z]   api.sona.is: yes
+[2026-03-12T14:28:32Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:32Z] [143/324] speechblubs.com
+[2026-03-12T14:28:32Z]   api.speechblubs.com: yes
+[2026-03-12T14:28:32Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:32Z] [144/324] taxscouts.com
+[2026-03-12T14:28:32Z]   api.taxscouts.com: no
+[2026-03-12T14:28:32Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:32Z] [145/324] waypointcommodities.com
+[2026-03-12T14:28:32Z]   api.waypointcommodities.com: yes
+[2026-03-12T14:28:32Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:32Z] [146/324] fiatrepublic.com
+[2026-03-12T14:28:32Z]   api.fiatrepublic.com: no
+[2026-03-12T14:28:32Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:32Z] [147/324] juli.co
+[2026-03-12T14:28:32Z]   api.juli.co: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [148/324] quix.io
+[2026-03-12T14:28:33Z]   api.quix.io: no
+[2026-03-12T14:28:33Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:33Z] [149/324] abhi.com.pk
+[2026-03-12T14:28:33Z]   api.abhi.com.pk: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [150/324] agro.club
+[2026-03-12T14:28:33Z]   api.agro.club: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [151/324] andercore.com
+[2026-03-12T14:28:33Z]   api.andercore.com: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [152/324] appparadox.com
+[2026-03-12T14:28:33Z]   api.appparadox.com: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [153/324] bikemap.net
+[2026-03-12T14:28:33Z]   api.bikemap.net: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [154/324] bliq.ai
+[2026-03-12T14:28:33Z]   api.bliq.ai: no
+[2026-03-12T14:28:33Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:33Z] [155/324] clausematch.com
+[2026-03-12T14:28:33Z]   api.clausematch.com: no
+[2026-03-12T14:28:33Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:33Z] [156/324] djust.io
+[2026-03-12T14:28:33Z]   api.djust.io: yes
+[2026-03-12T14:28:33Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:33Z] [157/324] eunice.ai
+[2026-03-12T14:28:33Z]   api.eunice.ai: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:34Z] [158/324] exa.finance
+[2026-03-12T14:28:34Z]   api.exa.finance: no
+[2026-03-12T14:28:34Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:34Z] [159/324] getmundi.app
+[2026-03-12T14:28:34Z]   api.getmundi.app: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:34Z] [160/324] gronda.eu
+[2026-03-12T14:28:34Z]   api.gronda.eu: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:34Z] [161/324] invesdor.com
+[2026-03-12T14:28:34Z]   api.invesdor.com: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:34Z] [162/324] iyzico.com
+[2026-03-12T14:28:34Z]   api.iyzico.com: no
+[2026-03-12T14:28:34Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:34Z] [163/324] maqsad.io
+[2026-03-12T14:28:34Z]   api.maqsad.io: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:34Z] [164/324] onitbank.com
+[2026-03-12T14:28:34Z]   api.onitbank.com: yes
+[2026-03-12T14:28:34Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:34Z] [165/324] receeve.com
+[2026-03-12T14:28:35Z]   api.receeve.com: yes
+[2026-03-12T14:28:35Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:35Z] [166/324] restabilise.com
+[2026-03-12T14:28:35Z]   api.restabilise.com: yes
+[2026-03-12T14:28:35Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:35Z] [167/324] tranched.fi
+[2026-03-12T14:28:35Z]   api.tranched.fi: no
+[2026-03-12T14:28:35Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:35Z] [168/324] wasmer.io
+[2026-03-12T14:28:35Z]   api.wasmer.io: no
+[2026-03-12T14:28:35Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:35Z] [169/324] wikifolio.com
+[2026-03-12T14:28:35Z]   api.wikifolio.com: yes
+[2026-03-12T14:28:35Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:35Z] [170/324] dreamdata.io
+[2026-03-12T14:28:35Z]   api.dreamdata.io: yes
+[2026-03-12T14:28:35Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:35Z] [171/324] fluidstack.io
+[2026-03-12T14:28:35Z]   api.fluidstack.io: no
+[2026-03-12T14:28:35Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:35Z] [172/324] liv.tv
+[2026-03-12T14:28:35Z]   api.liv.tv: yes
+[2026-03-12T14:28:35Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:35Z] [173/324] antavo.com
+[2026-03-12T14:28:35Z]   api.antavo.com: yes
+[2026-03-12T14:28:36Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:36Z] [174/324] cyscale.com
+[2026-03-12T14:28:36Z]   api.cyscale.com: yes
+[2026-03-12T14:28:36Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:36Z] [175/324] fabric.so
+[2026-03-12T14:28:36Z]   api.fabric.so: yes
+[2026-03-12T14:28:36Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:36Z] [176/324] linkup.so
+[2026-03-12T14:28:36Z]   api.linkup.so: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:37Z] [177/324] pleo.io
+[2026-03-12T14:28:37Z]   api.pleo.io: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [178/324] powernaut.io
+[2026-03-12T14:28:37Z]   api.powernaut.io: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [179/324] synthesia.io
+[2026-03-12T14:28:37Z]   api.synthesia.io: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [180/324] wealthkernel.com
+[2026-03-12T14:28:37Z]   api.wealthkernel.com: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [181/324] zincwork.com
+[2026-03-12T14:28:37Z]   api.zincwork.com: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [182/324] arcjet.com
+[2026-03-12T14:28:37Z]   api.arcjet.com: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [183/324] kasko.io
+[2026-03-12T14:28:37Z]   api.kasko.io: yes
+[2026-03-12T14:28:37Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:37Z] [184/324] studentfinance.com
+[2026-03-12T14:28:38Z]   api.studentfinance.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [185/324] sylvera.com
+[2026-03-12T14:28:38Z]   api.sylvera.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [186/324] argil.ai
+[2026-03-12T14:28:38Z]   api.argil.ai: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [187/324] crowd.dev
+[2026-03-12T14:28:38Z]   api.crowd.dev: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [188/324] gosuperscript.com
+[2026-03-12T14:28:38Z]   api.gosuperscript.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [189/324] meilisearch.com
+[2026-03-12T14:28:38Z]   api.meilisearch.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [190/324] wise.com
+[2026-03-12T14:28:38Z]   api.wise.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [191/324] askui.com
+[2026-03-12T14:28:38Z]   api.askui.com: no
+[2026-03-12T14:28:38Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:38Z] [192/324] codacy.com
+[2026-03-12T14:28:38Z]   api.codacy.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [193/324] cronofy.com
+[2026-03-12T14:28:38Z]   api.cronofy.com: yes
+[2026-03-12T14:28:38Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:38Z] [194/324] dust.tt
+[2026-03-12T14:28:38Z]   api.dust.tt: no
+[2026-03-12T14:28:38Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:38Z] [195/324] elliptic.co
+[2026-03-12T14:28:38Z]   api.elliptic.co: no
+[2026-03-12T14:28:38Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:38Z] [196/324] freqens.com
+[2026-03-12T14:28:38Z]   api.freqens.com: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] [197/324] gdevelop.io
+[2026-03-12T14:28:39Z]   api.gdevelop.io: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] [198/324] getmurphy.ai
+[2026-03-12T14:28:39Z]   api.getmurphy.ai: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] [199/324] griffin.com
+[2026-03-12T14:28:39Z]   api.griffin.com: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] [200/324] maze.co
+[2026-03-12T14:28:39Z]   api.maze.co: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] Checkpoint: scanned=200 api=142 mcp=12 prospects=132
+[2026-03-12T14:28:39Z] [201/324] nodeslinks.com
+[2026-03-12T14:28:39Z]   api.nodeslinks.com: no
+[2026-03-12T14:28:39Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:39Z] [202/324] popsink.com
+[2026-03-12T14:28:39Z]   api.popsink.com: yes
+[2026-03-12T14:28:39Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:39Z] [203/324] qminder.com
+[2026-03-12T14:28:39Z]   api.qminder.com: yes
+[2026-03-12T14:28:41Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:41Z] [204/324] salv.com
+[2026-03-12T14:28:41Z]   api.salv.com: no
+[2026-03-12T14:28:41Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:41Z] [205/324] thanksben.com
+[2026-03-12T14:28:41Z]   api.thanksben.com: yes
+[2026-03-12T14:28:41Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:41Z] [206/324] weavr.io
+[2026-03-12T14:28:41Z]   api.weavr.io: yes
+[2026-03-12T14:28:41Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:41Z] [207/324] agamonhealth.com
+[2026-03-12T14:28:41Z]   api.agamonhealth.com: yes
+[2026-03-12T14:28:41Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:41Z] [208/324] andel.org
+[2026-03-12T14:28:41Z]   api.andel.org: no
+[2026-03-12T14:28:41Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:41Z] [209/324] apperio.com
+[2026-03-12T14:28:42Z]   api.apperio.com: yes
+[2026-03-12T14:28:42Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:42Z] [210/324] dinmo.com
+[2026-03-12T14:28:42Z]   api.dinmo.com: no
+[2026-03-12T14:28:42Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:42Z] [211/324] faks.co
+[2026-03-12T14:28:42Z]   api.faks.co: yes
+[2026-03-12T14:28:42Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:42Z] [212/324] hopin.com
+[2026-03-12T14:28:42Z]   api.hopin.com: yes
+[2026-03-12T14:28:42Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:42Z] [213/324] light.inc
+[2026-03-12T14:28:42Z]   api.light.inc: yes
+[2026-03-12T14:28:42Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:42Z] [214/324] meetciao.com
+[2026-03-12T14:28:42Z]   api.meetciao.com: yes
+[2026-03-12T14:28:42Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:42Z] [215/324] metaview.ai
+[2026-03-12T14:28:42Z]   api.metaview.ai: yes
+[2026-03-12T14:28:43Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:43Z] [216/324] nurture.is
+[2026-03-12T14:28:43Z]   api.nurture.is: yes
+[2026-03-12T14:28:43Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:43Z] [217/324] pairnow.ai
+[2026-03-12T14:28:43Z]   api.pairnow.ai: yes
+[2026-03-12T14:28:43Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:43Z] [218/324] pelikan-mobility.com
+[2026-03-12T14:28:43Z]   api.pelikan-mobility.com: yes
+[2026-03-12T14:28:44Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:44Z] [219/324] peony.ink
+[2026-03-12T14:28:44Z]   api.peony.ink: yes
+[2026-03-12T14:28:44Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:44Z] [220/324] rampnetwork.com
+[2026-03-12T14:28:44Z]   api.rampnetwork.com: yes
+[2026-03-12T14:28:44Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:44Z] [221/324] reposit.co.uk
+[2026-03-12T14:28:44Z]   api.reposit.co.uk: yes
+[2026-03-12T14:28:44Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:44Z] [222/324] seedlegals.com
+[2026-03-12T14:28:45Z]   api.seedlegals.com: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [223/324] sidekickmoney.com
+[2026-03-12T14:28:45Z]   api.sidekickmoney.com: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [224/324] vespuccianalytics.com
+[2026-03-12T14:28:45Z]   api.vespuccianalytics.com: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [225/324] cerbos.dev
+[2026-03-12T14:28:45Z]   api.cerbos.dev: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [226/324] codemagic.io
+[2026-03-12T14:28:45Z]   api.codemagic.io: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [227/324] graphy.app
+[2026-03-12T14:28:45Z]   api.graphy.app: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [228/324] plakar.io
+[2026-03-12T14:28:45Z]   api.plakar.io: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [229/324] sikoia.com
+[2026-03-12T14:28:45Z]   api.sikoia.com: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [230/324] spektr.com
+[2026-03-12T14:28:45Z]   api.spektr.com: yes
+[2026-03-12T14:28:45Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:45Z] [231/324] tanaza.com
+[2026-03-12T14:28:45Z]   api.tanaza.com: no
+[2026-03-12T14:28:45Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:45Z] [232/324] uipath.com
+[2026-03-12T14:28:45Z]   api.uipath.com: no
+[2026-03-12T14:28:45Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:45Z] [233/324] alterest.co
+[2026-03-12T14:28:45Z]   api.alterest.co: no
+[2026-03-12T14:28:45Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:45Z] [234/324] codeship.com
+[2026-03-12T14:28:46Z]   api.codeship.com: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [235/324] codility.com
+[2026-03-12T14:28:46Z]   api.codility.com: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [236/324] evercontact.com
+[2026-03-12T14:28:46Z]   api.evercontact.com: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [237/324] fullview.io
+[2026-03-12T14:28:46Z]   api.fullview.io: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [238/324] gameye.com
+[2026-03-12T14:28:46Z]   api.gameye.com: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [239/324] getjelly.co.uk
+[2026-03-12T14:28:46Z]   api.getjelly.co.uk: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [240/324] gorodeo.app
+[2026-03-12T14:28:46Z]   api.gorodeo.app: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [241/324] grabcad.com
+[2026-03-12T14:28:46Z]   api.grabcad.com: yes
+[2026-03-12T14:28:46Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:46Z] [242/324] harbrdata.com
+[2026-03-12T14:28:46Z]   api.harbrdata.com: no
+[2026-03-12T14:28:46Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:46Z] [243/324] join-stories.com
+[2026-03-12T14:28:46Z]   api.join-stories.com: no
+[2026-03-12T14:28:46Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:46Z] [244/324] klasha.com
+[2026-03-12T14:28:46Z]   api.klasha.com: no
+[2026-03-12T14:28:46Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:46Z] [245/324] kubeark.com
+[2026-03-12T14:28:47Z]   api.kubeark.com: no
+[2026-03-12T14:28:47Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:47Z] [246/324] loctax.com
+[2026-03-12T14:28:47Z]   api.loctax.com: yes
+[2026-03-12T14:28:47Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:47Z] [247/324] medefer.com
+[2026-03-12T14:28:47Z]   api.medefer.com: yes
+[2026-03-12T14:28:47Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:47Z] [248/324] minubo.com
+[2026-03-12T14:28:47Z]   api.minubo.com: yes
+[2026-03-12T14:28:48Z]   result: api=1 mcp=1 prospect=0 priority=excluded
+[2026-03-12T14:28:48Z] [249/324] papayadash.com
+[2026-03-12T14:28:48Z]   api.papayadash.com: yes
+[2026-03-12T14:28:48Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:48Z] [250/324] patientsknowbest.com
+[2026-03-12T14:28:48Z]   api.patientsknowbest.com: no
+[2026-03-12T14:28:48Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:48Z] [251/324] prelude.so
+[2026-03-12T14:28:48Z]   api.prelude.so: no
+[2026-03-12T14:28:48Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:48Z] [252/324] reedsy.com
+[2026-03-12T14:28:48Z]   api.reedsy.com: no
+[2026-03-12T14:28:48Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:48Z] [253/324] rossum.ai
+[2026-03-12T14:28:48Z]   api.rossum.ai: no
+[2026-03-12T14:28:48Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:48Z] [254/324] runwhen.com
+[2026-03-12T14:28:48Z]   api.runwhen.com: no
+[2026-03-12T14:28:48Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:48Z] [255/324] tilt.app
+[2026-03-12T14:28:49Z]   api.tilt.app: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [256/324] trussle.com
+[2026-03-12T14:28:49Z]   api.trussle.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [257/324] useklump.com
+[2026-03-12T14:28:49Z]   api.useklump.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [258/324] veratrak.com
+[2026-03-12T14:28:49Z]   api.veratrak.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [259/324] wefox.com
+[2026-03-12T14:28:49Z]   api.wefox.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [260/324] yavin.com
+[2026-03-12T14:28:49Z]   api.yavin.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [261/324] ai-build.com
+[2026-03-12T14:28:49Z]   api.ai-build.com: no
+[2026-03-12T14:28:49Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:49Z] [262/324] branchtrack.com
+[2026-03-12T14:28:49Z]   api.branchtrack.com: no
+[2026-03-12T14:28:49Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:49Z] [263/324] bridge-u.com
+[2026-03-12T14:28:49Z]   api.bridge-u.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [264/324] buynomics.com
+[2026-03-12T14:28:49Z]   api.buynomics.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [265/324] certifaction.com
+[2026-03-12T14:28:49Z]   api.certifaction.com: no
+[2026-03-12T14:28:49Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:49Z] [266/324] flowengineering.com
+[2026-03-12T14:28:49Z]   api.flowengineering.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [267/324] kareinn.com
+[2026-03-12T14:28:49Z]   api.kareinn.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [268/324] labstep.com
+[2026-03-12T14:28:49Z]   api.labstep.com: yes
+[2026-03-12T14:28:49Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:49Z] [269/324] liveflow.com
+[2026-03-12T14:28:49Z]   api.liveflow.com: no
+[2026-03-12T14:28:50Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:50Z] [270/324] oneshot.ai
+[2026-03-12T14:28:50Z]   api.oneshot.ai: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [271/324] paceup.com
+[2026-03-12T14:28:50Z]   api.paceup.com: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [272/324] profitero.com
+[2026-03-12T14:28:50Z]   api.profitero.com: no
+[2026-03-12T14:28:50Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:50Z] [273/324] recurse.ml
+[2026-03-12T14:28:50Z]   api.recurse.ml: no
+[2026-03-12T14:28:50Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:50Z] [274/324] riskledger.com
+[2026-03-12T14:28:50Z]   api.riskledger.com: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [275/324] satago.com
+[2026-03-12T14:28:50Z]   api.satago.com: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [276/324] spill.chat
+[2026-03-12T14:28:50Z]   api.spill.chat: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [277/324] supercede.com
+[2026-03-12T14:28:50Z]   api.supercede.com: no
+[2026-03-12T14:28:50Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:50Z] [278/324] traderion.com
+[2026-03-12T14:28:50Z]   api.traderion.com: no
+[2026-03-12T14:28:50Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:50Z] [279/324] visiblyhq.com
+[2026-03-12T14:28:50Z]   api.visiblyhq.com: yes
+[2026-03-12T14:28:50Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:50Z] [280/324] appwrite.io
+[2026-03-12T14:28:51Z]   api.appwrite.io: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [281/324] knostic.ai
+[2026-03-12T14:28:51Z]   api.knostic.ai: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [282/324] monese.com
+[2026-03-12T14:28:51Z]   api.monese.com: yes
+[2026-03-12T14:28:51Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:51Z] [283/324] sayduck.com
+[2026-03-12T14:28:51Z]   api.sayduck.com: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [284/324] sorare.com
+[2026-03-12T14:28:51Z]   api.sorare.com: yes
+[2026-03-12T14:28:51Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:51Z] [285/324] synthesized.io
+[2026-03-12T14:28:51Z]   api.synthesized.io: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [286/324] weareuncapped.com
+[2026-03-12T14:28:51Z]   api.weareuncapped.com: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [287/324] 9fin.com
+[2026-03-12T14:28:51Z]   api.9fin.com: no
+[2026-03-12T14:28:51Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:51Z] [288/324] baserow.io
+[2026-03-12T14:28:51Z]   api.baserow.io: yes
+[2026-03-12T14:28:51Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:51Z] [289/324] blobr.io
+[2026-03-12T14:28:51Z]   api.blobr.io: no
+[2026-03-12T14:28:52Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:52Z] [290/324] clubzero.co
+[2026-03-12T14:28:52Z]   api.clubzero.co: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [291/324] digitaliron.com
+[2026-03-12T14:28:52Z]   api.digitaliron.com: no
+[2026-03-12T14:28:52Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:52Z] [292/324] dottxt.ai
+[2026-03-12T14:28:52Z]   api.dottxt.ai: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [293/324] ezra.com
+[2026-03-12T14:28:52Z]   api.ezra.com: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [294/324] fishbrain.com
+[2026-03-12T14:28:52Z]   api.fishbrain.com: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [295/324] flagcat.studio
+[2026-03-12T14:28:52Z]   api.flagcat.studio: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [296/324] flyskyflow.com
+[2026-03-12T14:28:52Z]   api.flyskyflow.com: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [297/324] fraugster.com
+[2026-03-12T14:28:52Z]   api.fraugster.com: no
+[2026-03-12T14:28:52Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:52Z] [298/324] functionhealth.com
+[2026-03-12T14:28:52Z]   api.functionhealth.com: no
+[2026-03-12T14:28:52Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:52Z] [299/324] getagent.co.uk
+[2026-03-12T14:28:52Z]   api.getagent.co.uk: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [300/324] getrevox.com
+[2026-03-12T14:28:52Z]   api.getrevox.com: no
+[2026-03-12T14:28:52Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:52Z] Checkpoint: scanned=300 api=207 mcp=15 prospects=194
+[2026-03-12T14:28:52Z] [301/324] grover.com
+[2026-03-12T14:28:52Z]   api.grover.com: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [302/324] hubblehq.com
+[2026-03-12T14:28:52Z]   api.hubblehq.com: yes
+[2026-03-12T14:28:52Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:52Z] [303/324] humanity.health
+[2026-03-12T14:28:53Z]   api.humanity.health: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [304/324] inovia.bio
+[2026-03-12T14:28:53Z]   api.inovia.bio: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [305/324] itchpet.com
+[2026-03-12T14:28:53Z]   api.itchpet.com: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [306/324] joinstepladder.com
+[2026-03-12T14:28:53Z]   api.joinstepladder.com: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [307/324] medusajs.com
+[2026-03-12T14:28:53Z]   api.medusajs.com: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [308/324] memories.ai
+[2026-03-12T14:28:53Z]   api.memories.ai: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [309/324] mybuilder.com
+[2026-03-12T14:28:53Z]   api.mybuilder.com: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [310/324] nordigen.com
+[2026-03-12T14:28:53Z]   api.nordigen.com: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [311/324] propertypartner.co
+[2026-03-12T14:28:53Z]   api.propertypartner.co: yes
+[2026-03-12T14:28:53Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:53Z] [312/324] rayon.design
+[2026-03-12T14:28:53Z]   api.rayon.design: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [313/324] resistant.ai
+[2026-03-12T14:28:53Z]   api.resistant.ai: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [314/324] sablebio.com
+[2026-03-12T14:28:53Z]   api.sablebio.com: no
+[2026-03-12T14:28:53Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:53Z] [315/324] sensestreet.com
+[2026-03-12T14:28:53Z]   api.sensestreet.com: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [316/324] source.dev
+[2026-03-12T14:28:54Z]   api.source.dev: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [317/324] streambased.io
+[2026-03-12T14:28:54Z]   api.streambased.io: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [318/324] sunriserobotics.co
+[2026-03-12T14:28:54Z]   api.sunriserobotics.co: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [319/324] tickitto.com
+[2026-03-12T14:28:54Z]   api.tickitto.com: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [320/324] tldv.io
+[2026-03-12T14:28:54Z]   api.tldv.io: yes
+[2026-03-12T14:28:54Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:54Z] [321/324] unifiedcrm.ai
+[2026-03-12T14:28:54Z]   api.unifiedcrm.ai: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [322/324] verax.ai
+[2026-03-12T14:28:54Z]   api.verax.ai: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [323/324] webstudio.is
+[2026-03-12T14:28:54Z]   api.webstudio.is: no
+[2026-03-12T14:28:54Z]   result: api=0 mcp=0 prospect=0 priority=low
+[2026-03-12T14:28:54Z] [324/324] yonder.com
+[2026-03-12T14:28:54Z]   api.yonder.com: yes
+[2026-03-12T14:28:54Z]   result: api=1 mcp=0 prospect=1 priority=high
+[2026-03-12T14:28:54Z] Checkpoint: scanned=324 api=217 mcp=15 prospects=204
+[2026-03-12T14:28:54Z] Prospect scan complete
+[2026-03-12T14:28:54Z] Run log: /app/data/logs/scan_20260312T142807Z-51eb6242.log
+[2026-03-12T14:28:54Z] Event log: /app/data/logs/scan_20260312T142807Z-51eb6242.jsonl

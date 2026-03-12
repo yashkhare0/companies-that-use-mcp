@@ -1,0 +1,5 @@
+stripe.com
+cloudflare.com
+hubspot.com
+vercel.com
+openai.com
