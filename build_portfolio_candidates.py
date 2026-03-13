@@ -59,6 +59,7 @@ SPEEDINVEST_PAGE_1 = SourcePage(
     url="https://www.speedinvest.com/portfolio/",
     cache_name="speedinvest_portfolio.html",
 )
+HTGF_PORTFOLIO_API = "https://www.htgf.de/wp-json/wp/v2/portfolio"
 
 
 def log(message: str) -> None:
@@ -82,6 +83,26 @@ def fetch_cached(url: str, cache_name: str, refresh: bool = False) -> str:
 
     cache_path.write_text(body, encoding="utf-8")
     return body
+
+
+def fetch_json(url: str, cache_name: str, refresh: bool = False) -> object:
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    cache_path = RAW_DIR / cache_name
+    if cache_path.exists() and not refresh:
+        return json.loads(read_cached_text(cache_path))
+
+    req = Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/json",
+        },
+    )
+    with urlopen(req, timeout=30) as response:
+        body = response.read().decode("utf-8", errors="ignore")
+
+    cache_path.write_text(body, encoding="utf-8")
+    return json.loads(body)
 
 
 def read_cached_text(path: Path) -> str:
@@ -429,11 +450,75 @@ def parse_project_a() -> list[dict]:
     return records
 
 
+def parse_htgf(refresh: bool) -> list[dict]:
+    records: list[dict] = []
+    seen_links: set[str] = set()
+
+    for page_num in range(1, 20):
+        url = f"{HTGF_PORTFOLIO_API}?lang=en&per_page=100&page={page_num}"
+        cache_name = f"htgf_portfolio_api_page{page_num}.json"
+        payload = fetch_json(url, cache_name, refresh=refresh)
+        if not isinstance(payload, list) or not payload:
+            break
+
+        for company in payload:
+            if not isinstance(company, dict):
+                continue
+
+            detail_url = textify(company.get("link"))
+            if not detail_url or detail_url in seen_links:
+                continue
+            seen_links.add(detail_url)
+
+            detail_slug = detail_url.rstrip("/").split("/")[-1] or f"company_{company.get('id')}"
+            detail_html = fetch_cached(
+                detail_url,
+                f"htgf_detail_{detail_slug}.html",
+                refresh=refresh,
+            )
+
+            website_match = re.search(
+                r'<a href="(https?://[^"]+)" target="_blank"\s+class="wp-block-button__link wp-element-button">',
+                detail_html,
+                flags=re.I,
+            )
+            company_url = website_match.group(1) if website_match else None
+
+            title = company.get("title") or {}
+            acf = company.get("acf") or {}
+            excerpt = company.get("excerpt") or {}
+            taxonomy = acf.get("taxonomy-location")
+
+            record = make_record(
+                source="htgf",
+                source_url="https://www.htgf.de/en/portfolio/",
+                name=textify(title.get("rendered")),
+                company_url=company_url,
+                portfolio_url=detail_url,
+                description=excerpt.get("rendered"),
+                tags=[textify(acf.get("investment-area"))] if acf.get("investment-area") else [],
+                stage=textify(acf.get("status")),
+                status=textify(acf.get("status")),
+                city=textify(taxonomy),
+                country="Germany",
+                investment_year=textify(acf.get("date")),
+                website_confidence="high",
+            )
+            if record:
+                records.append(record)
+
+        if len(payload) < 100:
+            break
+
+    return records
+
+
 def dedupe_records(records: list[dict]) -> list[dict]:
     deduped: dict[str, dict] = {}
     priority = {
         "project_a": 5,
         "speedinvest": 5,
+        "htgf": 5,
         "hv_capital": 5,
         "point_nine": 5,
         "seedcamp": 4,
@@ -534,6 +619,7 @@ def main() -> int:
         ("hv_capital", lambda: parse_hv()),
         ("speedinvest", lambda: parse_speedinvest(args.speedinvest_pages, args.refresh)),
         ("project_a", lambda: parse_project_a()),
+        ("htgf", lambda: parse_htgf(args.refresh)),
     ]
 
     source_counts: dict[str, int] = {}

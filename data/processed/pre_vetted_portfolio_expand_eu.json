@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-03-13T10:42:55Z",
+  "candidates_path": "data/processed/icp_portfolio_expand_eu.csv",
+  "prefilter_path": "data/processed/digital_first_20260313_085757.csv",
+  "output_prefix": "data/processed/pre_vetted_portfolio_expand_eu",
+  "selected_candidates": 491,
+  "allowed_sources": [
+    "yc_",
+    "seedcamp",
+    "point_nine",
+    "hv_capital",
+    "speedinvest",
+    "project_a",
+    "htgf"
+  ],
+  "min_icp_score": 12,
+  "source_min_scores": {
+    "yc_": 12,
+    "seedcamp": 5,
+    "point_nine": 8,
+    "hv_capital": 8,
+    "speedinvest": 7,
+    "project_a": 7,
+    "htgf": 7
+  },
+  "max_team_size": 2500
+}

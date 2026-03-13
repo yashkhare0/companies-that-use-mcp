@@ -94,13 +94,16 @@ def icp_score(candidate)
   score = 0
   score += 5 if candidate[:source].start_with?('yc')
   score += 4 if candidate[:source].start_with?('angelpad')
-  score += 4 if %w[seedcamp point_nine hv_capital speedinvest project_a].include?(candidate[:source])
+  score += 4 if %w[seedcamp point_nine hv_capital speedinvest project_a htgf].include?(candidate[:source])
   score += 1 if candidate[:source] == 'curated'
 
   tags = Array(candidate[:tags]).map(&:downcase)
   description = [candidate[:one_liner], candidate[:description]].compact.join(' ').downcase
+  location = candidate[:location].to_s.downcase
   score += 3 if tags.any? { |tag| %w[saas b2b api dev-tools developer-tools fintech security hr-tech sales productivity operations infrastructure].include?(tag) }
   score += 2 if description.match?(/\b(api|developer|integration|workflow|automation|platform|infrastructure|auth|oauth)\b/)
+  score += 2 if location.match?(/\b(germany|berlin|munich|muenchen|hamburg|cologne|koln|köln|frankfurt|stuttgart|dusseldorf|düsseldorf)\b/)
+  score += 1 if location.match?(/\b(austria|switzerland|zurich|zürich|vienna|wien|amsterdam|netherlands|paris|france|stockholm|sweden|helsinki|finland|copenhagen|denmark|madrid|barcelona|spain|lisbon|portugal|brussels|belgium|warsaw|poland|prague|czech|dublin|ireland|luxembourg|estonia|latvia|lithuania)\b/)
 
   team_size = candidate[:team_size].to_i
   score += 2 if team_size.positive? && team_size <= 300

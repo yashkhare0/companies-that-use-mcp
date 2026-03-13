@@ -1,76 +1,85 @@
 # Progress Log
 
-## Session: 2026-03-12
+## Session: 2026-03-12 to 2026-03-13
 
-### Phase 1: Requirements & Discovery
+### Phase 1: Discovery
 - **Status:** complete
-- **Started:** 2026-03-12
-- Actions taken:
-  - Activated the local project context.
-  - Inspected the available skill instructions relevant to this task.
-  - Listed the repo root contents.
-  - Read the project README.
-  - Located `mcp_scans.db`, enumerated its tables, and counted rows in `scans`.
-  - Attempted Ruby symbol inspection through Serena and fell back to targeted shell inspection after tool failure.
-  - Inspected `scan_to_db.rb`, `setup_db.rb`, `scope_prospects.rb`, and `mcp_scanner.rb` to confirm execution flow, schema, and failure handling.
-- Files created/modified:
-  - `task_plan.md` (created)
-  - `findings.md` (created)
-  - `progress.md` (created)
+- Confirmed the repo's MCP/API verification flow works.
+- Confirmed SQLite is usable as an intermediate store.
+- Confirmed the original bottleneck was candidate sourcing, not scan logic.
 
-### Phase 2: Execution Plan
-- **Status:** in_progress
-- Actions taken:
-  - Confirmed local Ruby is not installed.
-  - Attempted Ruby installation through Chocolatey and hit non-elevated permission issues.
-  - Added Docker support so the repo can run in an isolated container instead of relying on host Ruby.
-  - Updated README with Docker commands for setup, scanning, stats, and export.
-  - Verified Docker engine access with elevated permissions.
-  - Built the scanner image successfully.
-  - Ran `setup_db.rb` inside the container successfully.
-  - Generated `domains_full.txt` from `build_domains.rb`; it contains 317 domains.
-  - Ran a 5-domain sample scan inside the container and verified the new rows in SQLite.
-  - Verified stats/views still work after the sample scan.
-- Files created/modified:
-  - `Dockerfile` (created)
-  - `docker-compose.yml` (created)
-  - `.dockerignore` (created)
-  - `README.md` (updated)
-  - `domains_full.txt` (generated)
-  - `sample_domains.txt` (generated)
-  - `task_plan.md` (updated)
-  - `findings.md` (updated)
-  - `progress.md` (updated)
+### Phase 2: Source Expansion
+- **Status:** complete
+- Added `build_portfolio_candidates.py`.
+- Established `data/raw` and `data/processed` as the canonical data layout.
+- Implemented trusted official source adapters for:
+  - `seedcamp`
+  - `point_nine`
+  - `hv_capital`
+  - `speedinvest`
+  - `project_a`
+  - `htgf`
+- Added HTGF via official WordPress portfolio collection data plus official detail-page website extraction.
 
-## Test Results
-| Test | Input | Expected | Actual | Status |
-|------|-------|----------|--------|--------|
-| DB table discovery | Query `sqlite_master` in `mcp_scans.db` | Find user tables | Found `scans` | pass |
-| DB row count | `SELECT COUNT(*) FROM scans` | Return current row count | `317` | pass |
-| Docker engine access | `docker info --format "{{.ServerVersion}}|{{.OperatingSystem}}"` | Reach Docker engine | `29.1.3|Docker Desktop` | pass |
-| Docker image build | `docker compose build` | Build Ruby scanner image | Build completed successfully | pass |
-| DB init in container | `docker compose run --rm mcp-scanner ruby setup_db.rb` | Open/create DB and views | Completed successfully with 317 records preserved | pass |
-| Seed list generation | `docker compose run --rm mcp-scanner ruby build_domains.rb > domains_full.txt` | Generate domain file | Generated 317 domains | pass |
-| Sample scan in container | `docker compose run --rm mcp-scanner ruby scan_to_db.rb sample_domains.txt` | Scan domains and persist rows | 5 rows inserted successfully | pass |
-| DB post-scan integrity | SQLite queries over `scans` and `latest_scans` | 322 total rows, 317 latest distinct domains | Matched expectation | pass |
+### Phase 3: Candidate Scoring & Pre-Vetting
+- **Status:** complete
+- Updated `build_icp_candidates.rb` to ingest latest portfolio candidates and boost Germany/EU signals.
+- Updated `select_pre_vetted_candidates.rb` to include `htgf` and use source-aware minimum scores.
+- Rebuilt the unified candidate set:
+  - `6982` unique candidates
+- Ran strict digital-first prefilter:
+  - `3004` kept
+- Built updated pre-vetted cohort:
+  - `491` selected
 
-## Error Log
-| Timestamp | Error | Attempt | Resolution |
-|-----------|-------|---------|------------|
-| 2026-03-12 | PowerShell profile load warnings on shell startup | 1 | Use `login:false` where practical |
-| 2026-03-12 | Serena Ruby symbol overview failed with `Project._lsp_init_error` | 1 | Switched to targeted shell reads and searches |
-| 2026-03-12 | Chocolatey Ruby install failed without elevated access | 1 | Switched to Docker-based runtime |
-| 2026-03-12 | Docker engine unreachable at `dockerDesktopLinuxEngine` | 1 | Retried with elevated access and succeeded |
-| 2026-03-12 | Ruby scripts warn about CRLF shebang lines in Linux container | 1 | Non-fatal; defer line-ending cleanup |
+### Phase 4: Live Verification
+- **Status:** complete
+- Ran live scan:
+  - Run ID: `20260313T104339Z-165a0986`
+  - Input: `491`
+  - High: `306`
+  - Excluded: `18`
+  - Low: `167`
+- Exported:
+  - `data/processed/pre_vetted_portfolio_expand_eu_high.csv`
+  - `data/processed/pre_vetted_portfolio_expand_eu_excluded.csv`
 
-## 5-Question Reboot Check
-| Question | Answer |
-|----------|--------|
-| Where am I? | Phase 1, inspecting scripts and database flow |
-| Where am I going? | Execution plan, implementation if needed, then verification |
-| What's the goal? | Produce a reliable runbook and verify the repo can scan broadly and persist full results |
-| What have I learned? | See findings.md |
-| What have I done? | See above |
+### Phase 5: Results
+- **Status:** complete
+- Latest official portfolio inventory:
+  - `1562` unique domains
+- Verified high-priority source breakdown:
+  - `seedcamp`: `97`
+  - `speedinvest`: `62`
+  - `htgf`: `54`
+  - `point_nine`: `23`
+  - `project_a`: `22`
+  - `hv_capital`: `16`
+  - YC combined: `32`
+- Germany-located verified prospects in latest high file:
+  - `101`
 
----
-*Update after completing each phase or encountering errors*
+## Files Created or Updated
+- `build_portfolio_candidates.py`
+- `build_icp_candidates.rb`
+- `select_pre_vetted_candidates.rb`
+- `task_plan.md`
+- `findings.md`
+- `progress.md`
+
+## Important Outputs
+- `data/processed/portfolio_candidates_latest.csv`
+- `data/processed/icp_portfolio_expand_eu.csv`
+- `data/processed/digital_first_20260313_085757.csv`
+- `data/processed/pre_vetted_portfolio_expand_eu.csv`
+- `data/processed/pre_vetted_portfolio_expand_eu_high.csv`
+- `data/processed/pre_vetted_portfolio_expand_eu_excluded.csv`
+
+## Errors / Deviations
+- HTGF `admin-ajax` direct POST did not return usable content; moved to the official WP REST endpoint.
+- Portfolio harvesting required a longer timeout once HTGF detail pages were added.
+
+## Next Likely Work
+- Add another trusted EU source only if it exposes official company websites clearly.
+- Prioritize Balderton, B2venture, or another Germany/EU-heavy source for adapter investigation.
+- Add a clean JSONL export shaped specifically for Convex ingestion.

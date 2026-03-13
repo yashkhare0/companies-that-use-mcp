@@ -1,0 +1,16 @@
+[2026-03-13T08:57:57Z] Prefilter started: input=data/processed/icp_portfolio_expand_eu.txt domains=6982 workers=40
+[2026-03-13T08:58:12Z] Progress: processed=500/6982 kept=266 wildcard_skipped=64 weak_signal_skipped=59
+[2026-03-13T08:58:29Z] Progress: processed=1000/6982 kept=426 wildcard_skipped=167 weak_signal_skipped=88
+[2026-03-13T08:58:47Z] Progress: processed=1500/6982 kept=606 wildcard_skipped=259 weak_signal_skipped=133
+[2026-03-13T08:59:04Z] Progress: processed=2000/6982 kept=880 wildcard_skipped=342 weak_signal_skipped=170
+[2026-03-13T08:59:20Z] Progress: processed=2500/6982 kept=1123 wildcard_skipped=402 weak_signal_skipped=184
+[2026-03-13T08:59:41Z] Progress: processed=3000/6982 kept=1311 wildcard_skipped=455 weak_signal_skipped=203
+[2026-03-13T09:00:01Z] Progress: processed=3500/6982 kept=1533 wildcard_skipped=502 weak_signal_skipped=232
+[2026-03-13T09:00:22Z] Progress: processed=4000/6982 kept=1702 wildcard_skipped=565 weak_signal_skipped=252
+[2026-03-13T09:00:41Z] Progress: processed=4500/6982 kept=1925 wildcard_skipped=629 weak_signal_skipped=286
+[2026-03-13T09:00:59Z] Progress: processed=5000/6982 kept=2152 wildcard_skipped=682 weak_signal_skipped=302
+[2026-03-13T09:01:18Z] Progress: processed=5500/6982 kept=2363 wildcard_skipped=744 weak_signal_skipped=319
+[2026-03-13T09:01:39Z] Progress: processed=6000/6982 kept=2586 wildcard_skipped=789 weak_signal_skipped=349
+[2026-03-13T09:01:58Z] Progress: processed=6500/6982 kept=2826 wildcard_skipped=845 weak_signal_skipped=367
+[2026-03-13T09:02:18Z] Progress: processed=6982/6982 kept=3004 wildcard_skipped=923 weak_signal_skipped=386
+[2026-03-13T09:02:19Z] Prefilter complete: kept=3004 txt=/app/data/processed/digital_first_20260313_085757.txt csv=/app/data/processed/digital_first_20260313_085757.csv

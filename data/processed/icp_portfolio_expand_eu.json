@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-12T19:22:35Z",
+  "output_prefix": "data/processed/icp_portfolio_expand_eu",
+  "top_limit": 5000,
+  "total_candidates": 6982,
+  "source_counts": {
+    "top_1m": 5000,
+    "curated": 317,
+    "yc_saas": 50,
+    "yc_b2b": 49,
+    "yc_fintech": 50,
+    "yc_developer_tools": 50,
+    "yc_artificial_intelligence": 50,
+    "yc_security": 50,
+    "yc_productivity": 50,
+    "yc_directory": 0,
+    "angelpad_portfolio": 0,
+    "angelpad_saas": 0,
+    "portfolio_sources": 1562
+  },
+  "outputs": {
+    "txt": "data/processed/icp_portfolio_expand_eu.txt",
+    "csv": "data/processed/icp_portfolio_expand_eu.csv",
+    "jsonl": "data/processed/icp_portfolio_expand_eu.jsonl"
+  }
+}

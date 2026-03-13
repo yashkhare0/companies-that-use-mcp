@@ -12,10 +12,10 @@ candidates_path = ARGV[0]
 prefilter_path = ARGV[1]
 output_prefix = ARGV[2]
 
-allowed_sources = (ENV['ALLOWED_SOURCES'] || 'yc_,seedcamp,point_nine,hv_capital,speedinvest,project_a').split(',').map(&:strip).reject(&:empty?)
+allowed_sources = (ENV['ALLOWED_SOURCES'] || 'yc_,seedcamp,point_nine,hv_capital,speedinvest,project_a,htgf').split(',').map(&:strip).reject(&:empty?)
 min_icp_score = (ENV['MIN_ICP_SCORE'] || '12').to_i
 max_team_size = (ENV['MAX_TEAM_SIZE'] || '2500').to_i
-source_min_scores = (ENV['SOURCE_MIN_SCORES'] || 'yc_=12,seedcamp=5,point_nine=8,hv_capital=8,speedinvest=7,project_a=7').split(',').filter_map do |entry|
+source_min_scores = (ENV['SOURCE_MIN_SCORES'] || 'yc_=12,seedcamp=5,point_nine=8,hv_capital=8,speedinvest=7,project_a=7,htgf=7').split(',').filter_map do |entry|
   prefix, score = entry.split('=', 2).map(&:strip)
   next if prefix.to_s.empty? || score.to_s.empty?
 

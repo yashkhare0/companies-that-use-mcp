@@ -1,0 +1,1 @@
+{"code":"rest_invalid_json","message":"Ein ung\u00fcltiger JSON-Body wurde \u00fcbergeben.","data":{"status":400,"json_error_code":4,"json_error_message":"Syntax error"}}

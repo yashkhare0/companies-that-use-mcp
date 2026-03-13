@@ -1,49 +1,89 @@
 # Findings & Decisions
 
-## Requirements
-- Explain how to run the scanner across as many domains as possible.
-- Verify the pipeline is working smoothly for long-running overnight scans.
-- Allow adding data to `mcp_scans.db` now while keeping a clean path to future migration into another database such as Convex.
-- Produce the full prospect list, not just summary stats.
+## Current Objective
+- Expand the verified prospect pool well beyond the original small seed set.
+- Prioritize digital-first businesses, especially EU and Germany-heavy companies.
+- Treat companies with public MCPs as exclusions, not prospects.
+- Avoid false positives by relying on official source pages and live scan verification.
 
-## Research Findings
-- Repo top-level files are `mcp_scanner.rb`, `scan_to_db.rb`, `scope_prospects.rb`, `build_domains.rb`, `setup_db.rb`, `README.md`, `mcp_scans.db`, `count.txt`, and `results/`.
-- README states the core scanner is `mcp_scanner.rb`, requires only Ruby stdlib, and scans domains by probing `mcp.<domain>` over MCP endpoints.
-- Current SQLite database has one user table: `scans`.
-- Current row count in `scans` is `317`.
-- `scan_to_db.rb` is the persistence entrypoint. It loads a domain file, skips domains already scanned on the current day, probes `api.<domain>` plus MCP endpoints, and inserts one row per scan into `scans`.
-- `setup_db.rb` creates the `scans` table plus views `latest_scans`, `prospects_high`, and `security_risks`.
-- `build_domains.rb` currently emits a static curated list; it does not dynamically fetch Bloomberry or another external source.
-- Added Docker support in `Dockerfile`, `docker-compose.yml`, and `.dockerignore` so the repo can run without host Ruby.
-- `docker compose version` works locally, but the Docker engine was unreachable from this session when checked.
-- After retrying with elevated access, Docker engine access worked and the image built successfully.
-- Containerized `setup_db.rb` ran successfully and preserved the existing `317` scan records.
-- A containerized sample run of `scan_to_db.rb` against 5 domains completed successfully and appended 5 new rows, bringing `scans` to `322` total rows while `latest_scans` stayed at `317` distinct domains.
-- Bloomberry's current public MCP page shows `1,496` companies using MCP as of March 12, 2026, which is much larger than the repo's current static `317`-domain seed list.
+## Key Findings
+- The scanner was never the real bottleneck; candidate generation was.
+- The repo originally depended on a static curated list plus lightweight seeds, which capped useful prospecting volume.
+- Official portfolio pages are a much better candidate source than generic top-domain lists when they expose the company website directly.
+- HTGF is particularly valuable for this project because it is Germany-heavy and exposes portfolio data through an official WordPress API plus official detail pages.
+
+## Implemented Source Set
+- `seedcamp`
+- `point_nine`
+- `hv_capital`
+- `speedinvest`
+- `project_a`
+- `htgf`
+
+## Verified Harvest Results
+- New portfolio harvester: `build_portfolio_candidates.py`
+- Latest official portfolio inventory: `1562` unique domains
+- Source counts from latest portfolio build:
+  - `seedcamp`: `314`
+  - `point_nine`: `172`
+  - `hv_capital`: `249`
+  - `speedinvest`: `278`
+  - `project_a`: `109`
+  - `htgf`: `512`
+
+## Candidate Funnel Results
+- Unified candidate set with top domains + curated + YC + official portfolios: `6982`
+- Strict digital-first survivors: `3004`
+- Pre-vetted candidates selected for live verification: `491`
+
+## Latest Verified Scan
+- Run ID: `20260313T104339Z-165a0986`
+- Verified high-priority prospects (`has_api=1 && has_mcp=0`): `306`
+- Verified MCP exclusions: `18`
+- Low/no-API remainder: `167`
+
+## Source Lift In Verified Prospects
+- High-priority source breakdown:
+  - `seedcamp`: `97`
+  - `speedinvest`: `62`
+  - `htgf`: `54`
+  - `point_nine`: `23`
+  - `project_a`: `22`
+  - `hv_capital`: `16`
+  - YC sources combined: `32`
+- Germany-located verified prospects in the latest high file: `101`
+
+## Confirmed MCP Exclusions In Latest Run
+- `algolia.com`
+- `amplitude.com`
+- `antavo.com`
+- `brevo.com`
+- `checkr.com`
+- `cloudsquid.io`
+- `comet.rocks`
+- `contentful.com`
+- `dedaluslabs.ai`
+- `eunice.ai`
+- `infakt.pl`
+- `linkup.so`
+- `metaview.ai`
+- `minubo.com`
+- `qminder.com`
+- `sequencemkts.com`
+- `sumup.com`
+- `zapier.com`
 
 ## Technical Decisions
 | Decision | Rationale |
 |----------|-----------|
-| Verify script entrypoints before proposing commands | The repo has multiple Ruby scripts and the README only documents the lowest-level scanner |
-| Prefer containerization over host Ruby for this machine | Ruby is not installed locally and package installation from this session failed on permissions |
+| Use Python to harvest official portfolio sources | Easier to build/maintain source-specific adapters |
+| Keep raw files under `data/raw` and outputs under `data/processed` | Makes reruns and later database migration easier |
+| Add source-aware pre-vetting thresholds | Lets EU/VC-backed sources flow through without using a YC-only score floor |
+| Add location bias in scoring for Germany and nearby EU startup hubs | Better alignment with the ICP without changing live verification rules |
+| Continue using SQLite as the intermediate truth store | Good enough for overnight scans and easy to export later |
 
-## Issues Encountered
-| Issue | Resolution |
-|-------|------------|
-| PowerShell startup profiles are blocked by execution policy and emit warnings | Use non-login shell invocations where possible; warnings are noisy but non-fatal |
-| Serena Ruby symbol overview is not working in this project | Inspect Ruby entrypoints with targeted shell reads instead |
-| Docker engine is currently unreachable from this session | Need Docker Desktop engine running before build/test verification |
-| Ruby scripts emit `shebang line ending with \\r may cause problems` inside the Linux container | Non-fatal for now; normalize line endings later if desired |
-
-## Resources
-- Local README: `B:\projects\research\companies-that-use-mcp\README.md`
-- Bloomberry article referenced by user: `https://bloomberry.com/blog/we-analyzed-1400-mcp-servers-heres-what-we-learned/`
-- Docker files: `B:\projects\research\companies-that-use-mcp\Dockerfile`, `B:\projects\research\companies-that-use-mcp\docker-compose.yml`
-- Bloomberry current MCP company list: `https://bloomberry.com/data/mcp/`
-
-## Visual/Browser Findings
-- None yet.
-
----
-*Update this file after every 2 view/browser/search operations*
-*This prevents visual information from being lost*
+## Remaining Gaps
+- Balderton is not yet added to the trusted-source set.
+- B2venture needs more investigation before trusting domain extraction.
+- Creandum is still not wired into the trusted-source set.
+- Some large official sources still require adapter work, but the false-positive bar should stay high.
