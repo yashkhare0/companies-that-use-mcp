@@ -1,0 +1,1 @@
+{"checked_url": "https://feeleven.com/", "final_url": "https://feeleven.com/", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'feeleven.com'. (_ssl.c:1081)", "checked_at": "2026-03-16T14:32:48.523946+00:00"}

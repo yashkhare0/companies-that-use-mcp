@@ -1,159 +1,210 @@
-# mcp_scanner.rb
+# Companies That Use MCP
 
-A Ruby script that probes domains for MCP servers and fingerprints their SDK, authentication method, transport protocol, security posture, and exposed tools.
+This repo does two jobs:
 
-Built to power the research behind [We analyzed 1,400 MCP servers - here's what we learned](https://bloomberry.com/blog/we-analyzed-1400-mcp-servers-heres-what-we-learned/).
+1. scan domains for public MCP endpoints
+2. build a source-backed prospecting pipeline for digital-first companies that do not have MCP yet
 
-A live list of known MCP server domains (updated regularly) is available at [bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/).
+The repo is now structured as an application instead of a loose pile of scripts.
 
----
+## Runtime
 
-## Requirements
-
-- Ruby 2.3+
-- `mcp_scanner.rb` itself uses only Ruby stdlib: `net/http`, `openssl`, `uri`, `json`, `resolv`, `timeout`
-- `setup_db.rb` and `scan_to_db.rb` also require the `sqlite3` Ruby gem
-
-### Docker
-
-If you want an isolated runtime instead of installing Ruby locally, use Docker Desktop:
+Docker is the default runtime for the Ruby pipeline.
 
 ```bash
-# Build the image
 docker compose build
-
-# Initialize the database
-docker compose run --rm mcp-scanner ruby setup_db.rb
-
-# Build a seed domain list
-docker compose run --rm mcp-scanner ruby build_domains.rb > domains_full.txt
-
-# Scan all domains into mcp_scans.db
-docker compose run --rm mcp-scanner ruby scan_to_db.rb domains_full.txt
-
-# Show DB stats
-docker compose run --rm mcp-scanner ruby scan_to_db.rb --stats
-
-# Export all latest rows or just the highest-priority prospects
-docker compose run --rm mcp-scanner ruby scan_to_db.rb --export all
-docker compose run --rm mcp-scanner ruby scan_to_db.rb --export high
+docker compose run --rm mcp-scanner ruby app/ruby/setup_db.rb
 ```
 
-The compose service mounts this repo into the container, so `mcp_scans.db` and `results/` stay on the host.
+## Main Entry Point
 
----
-
-## Usage
-
-### Command line
+Use `main.py` as the primary operator surface.
 
 ```bash
-# Pass domains as arguments
-ruby mcp_scanner.rb stripe.com cloudflare.com hubspot.com
-
-# Read from a file
-ruby mcp_scanner.rb < domains.txt
-
-# Pipe in a list
-cat domains.txt | ruby mcp_scanner.rb
+python main.py --help
+python main.py paths
+python main.py pipeline official-refresh --scan
+python main.py data refresh-final
 ```
 
-### As a library
+`main.py` is the only intended root-level code entrypoint.
 
-```ruby
-require_relative 'mcp_scanner'
+## Repo Layout
 
-# Scan a list of domains
-analyzeMcp(["stripe.com", "cloudflare.com", "hubspot.com"])
+### `app/`
+- `app/cli.py`
+  Main CLI parser.
+- `app/config.py`
+  Canonical repo paths and shared config.
+- `app/commands/`
+  CLI command modules for `portfolio`, `icp`, `prefilter`, `shortlist`, `scan`, `data`, `pipeline`, and `paths`.
+- `app/python/`
+  Python implementations, currently including portfolio-source ingestion.
+- `app/ruby/`
+  Ruby implementations for scanning, shortlist generation, master-data builds, enrichment, and DB/export work.
+- `app/ruby/lib/prospecting/paths.rb`
+  Shared Ruby path constants.
 
-# Scan a random sample of 50 from a larger list
-analyzeMcp(domains, 50)
+### Root entrypoints
+- `main.py`
+  Preferred CLI entrypoint.
 
-# Probe a single domain and inspect the raw result hash
-result = getMcpStatus("stripe.com")
-pp result["mcp"]
+### Data folders
+- `data/raw/`
+  Source zips, cached HTML, raw portfolio pages.
+- `data/processed/`
+  Intermediate artifacts such as ICP builds, prefilters, and shortlist exports.
+- `data/logs/`
+  Logs for long-running filters and scan runs.
+- `data/master/`
+  Full-universe working datasets.
+- `data/final/`
+  Final working files for outreach and review.
+
+## Canonical Files
+
+### Processed
+- `data/processed/portfolio_candidates_latest.csv`
+- `data/processed/icp_latest.csv`
+- `data/processed/digital_first_latest.csv`
+- `data/processed/pre_vetted_latest.csv`
+- `data/processed/pre_vetted_latest_high.csv`
+- `data/processed/pre_vetted_latest_excluded.csv`
+
+### Master
+- `data/master/master_data.csv`
+- `data/master/website_activity_latest.csv`
+- `data/master/website_meta_latest.csv`
+
+### Final
+- `data/final/active_data.csv`
+- `data/final/inactive_master_data.csv`
+
+## Recommended Workflow
+
+### 1. Refresh official-source processed outputs
+```bash
+python main.py pipeline official-refresh --scan
 ```
 
----
+This refreshes the rolling files in `data/processed/`.
 
-## What it detects
-
-| Category | Details |
-|---|---|
-| **SDK** | FastMCP (Python), Official TypeScript SDK, TS FastMCP, Cloudflare Workers OAuth, Stagehand/Browserbase |
-| **Auth** | No auth, OAuth, API key |
-| **Transport** | Streamable HTTP (current standard), SSE (deprecated) |
-| **State** | Stateful (session ID), Stateless |
-| **Security** | Wide-open CORS, IP restrictions, rate limiting, unauthenticated tool leaks |
-| **Capabilities** | Tools, Resources, Prompts, Logging |
-| **Tools** | Count, names, read vs. write classification |
-
----
-
-## How it works
-
-For each domain, the scanner:
-
-1. Checks that `mcp.<domain>` resolves in DNS
-2. Sends an MCP `initialize` request to `/`, `/mcp`, and `/sse`
-3. If init succeeds, completes the handshake and calls `tools/list` to enumerate tools
-4. If init fails (auth required), attempts a cold `tools/list` probe to check for unauthenticated tool leaks
-5. Fingerprints the SDK, auth method, transport, and security posture from the responses
-
----
-
-## Output
-
-A summary report is printed after all domains are scanned:
-
-```text
-==================================================
-MCP SCAN RESULTS
---------------------------------------------------
-Domains scanned : 100
-MCP detected    : 42 (42.0%)
-Init succeeded  : 28 (66.7%)
-...
---- Authentication ---
-No auth  : 16 (38.1%)
-OAuth    : 14 (33.3%)
-API key  : 12 (28.6%)
-...
---- Top 20 Tool Names ---
-   1. search: 18
-   2. fetch: 13
-   3. ping: 12
-...
+### 2. Refresh canonical master/final datasets
+```bash
+python main.py data refresh-final
 ```
 
----
+This does the following:
+1. rebuild `data/master/master_data.csv` from the latest scan run and `icp_latest.csv`
+2. refresh `website_activity_latest.csv`
+3. rebuild the master so website activity is folded in
+4. refresh `website_meta_latest.csv`
+5. rebuild the master so metadata is folded in
+6. split the master into `active_data.csv` and `inactive_master_data.csv`
+7. enrich `active_data.csv` with business-status scoring
 
-## Getting a domain list
+## Manual Data Commands
 
-The easiest way to get started is to download the curated list of known MCP server domains from [bloomberry.com/data/mcp](https://bloomberry.com/data/mcp/), save it as `domains.txt` (one domain per line), and run:
+### Build the canonical master only
+```bash
+python main.py data master-build
+```
+
+### Refresh website activity only
+```bash
+python main.py data website-check
+```
+
+### Refresh homepage metadata only
+```bash
+python main.py data meta-fetch
+```
+
+### Split master into active/inactive files
+```bash
+python main.py data split-active
+```
+
+### Re-run business-status scoring on the active file
+```bash
+python main.py data business-status
+```
+
+## Ecommerce Discovery
+
+Build ecommerce source candidates from public directories:
 
 ```bash
-ruby mcp_scanner.rb < domains.txt
+python main.py ecommerce build-sources
 ```
 
-This repo also includes:
+Build source candidates from both `dtcetc` and `1800dtc`, with page controls:
 
-- `build_domains.rb` to emit a curated broader seed list into `domains_full.txt`
-- `scan_to_db.rb` to scan domains into `mcp_scans.db`
-- `scope_prospects.rb` to scan and write a CSV prospect list into `results/`
+```bash
+python main.py ecommerce build-sources --dtcetc-pages 24 --1800dtc-pages 40
+```
 
----
+Build a likely B2C ecommerce set from the active dataset:
 
-## Methodology notes
+```bash
+python main.py ecommerce build
+```
 
-- Discovery is based on `mcp.*` subdomains, a strong signal that a company is making a deliberate commitment to MCP versus an internal or staging server
-- SSL certificate errors are ignored (`VERIFY_NONE`) since many MCP servers use self-signed certs
-- A bogus subdomain check is performed to guard against wildcard DNS responses
-- Per-domain timeout is 15 seconds in `mcp_scanner.rb` and 20 seconds in the higher-level wrappers
-- The full methodology is described in the blog post linked above
+Probe shortlisted domains for Shopify storefront signals:
 
----
+```bash
+python main.py ecommerce detect-shopify
+```
 
-## License
+Use threaded probing for larger source-based runs:
 
-MIT
+```bash
+python main.py ecommerce detect-shopify --input data/processed/ecommerce_source_candidates_latest.csv --workers 12
+```
+
+Finalize the non-Shopify ecommerce file:
+
+```bash
+python main.py ecommerce finalize
+```
+
+Finalize source-based outputs without overwriting the active-dataset canonical file:
+
+```bash
+python main.py ecommerce finalize \
+  --candidates data/processed/ecommerce_source_candidates_latest.csv \
+  --detections data/processed/shopify_source_detection_run.csv \
+  --latest-prefix data/final/non_shopify_ecommerce_sources_latest \
+  --canonical-prefix data/final/non_shopify_ecommerce_sources
+```
+
+Or run the full balanced flow:
+
+```bash
+python main.py pipeline ecommerce-refresh
+```
+
+Or run the source-directory discovery pipeline end to end:
+
+```bash
+python main.py pipeline ecommerce-source-refresh --dtcetc-pages 24 --1800dtc-pages 40 --workers 12
+```
+
+## Database
+
+`mcp_scans.db` is the intermediate system of record for scan runs.
+
+Useful commands:
+
+```bash
+docker compose run --rm mcp-scanner ruby app/ruby/scan_to_db.rb --stats
+docker compose run --rm mcp-scanner ruby app/ruby/scan_to_db.rb --export all
+docker compose run --rm mcp-scanner ruby app/ruby/scan_to_db.rb --export high
+```
+
+## Notes
+
+- Portfolio adapters should stay official-first. Do not silently mix guessed domains into the same trust tier.
+- `data/processed/` is a build-artifact area, not the outreach source of truth.
+- The most useful user-facing datasets are in `data/master/` and `data/final/`.
+- Runtime code lives under `app/`; keep the repo root minimal.

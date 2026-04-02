@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-14T00:49:23Z",
+  "input_path": "data/processed/icp_b2venture_expand_eu.txt",
+  "output_txt": "/app/data/processed/digital_first_20260314_000935.txt",
+  "output_csv": "/app/data/processed/digital_first_20260314_000935.csv",
+  "total_domains": 102965,
+  "kept_domains": 28619,
+  "wildcard_skipped": 13445,
+  "weak_signal_skipped": 5255,
+  "workers": 50,
+  "signals": {
+    "high_trust": [
+      "api",
+      "docs",
+      "developer",
+      "developers",
+      "auth",
+      "platform",
+      "console"
+    ],
+    "medium_trust": [
+      "app",
+      "dashboard"
+    ],
+    "low_trust": [
+      "status"
+    ]
+  }
+}

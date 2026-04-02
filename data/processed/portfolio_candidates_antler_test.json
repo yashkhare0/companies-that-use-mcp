@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-13T23:58:55.376506+00:00",
+  "total_records": 2723,
+  "sources": [
+    "antler",
+    "htgf",
+    "hv_capital",
+    "point_nine",
+    "project_a",
+    "seedcamp",
+    "speedinvest"
+  ],
+  "outputs": {
+    "txt": "data\\processed\\portfolio_candidates_antler_test.txt",
+    "csv": "data\\processed\\portfolio_candidates_antler_test.csv",
+    "jsonl": "data\\processed\\portfolio_candidates_antler_test.jsonl"
+  }
+}

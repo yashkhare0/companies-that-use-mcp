@@ -1,0 +1,8 @@
+[2026-03-14T01:32:07Z] Prefilter started: input=data/processed/portfolio_candidates_latest.txt domains=2889 workers=50
+[2026-03-14T01:32:21Z] Progress: processed=500/2889 kept=180 wildcard_skipped=46 weak_signal_skipped=76
+[2026-03-14T01:32:32Z] Progress: processed=1000/2889 kept=388 wildcard_skipped=88 weak_signal_skipped=136
+[2026-03-14T01:32:41Z] Progress: processed=1500/2889 kept=526 wildcard_skipped=181 weak_signal_skipped=180
+[2026-03-14T01:32:56Z] Progress: processed=2000/2889 kept=661 wildcard_skipped=294 weak_signal_skipped=204
+[2026-03-14T01:33:11Z] Progress: processed=2500/2889 kept=898 wildcard_skipped=371 weak_signal_skipped=266
+[2026-03-14T01:33:24Z] Progress: processed=2889/2889 kept=1099 wildcard_skipped=407 weak_signal_skipped=311
+[2026-03-14T01:33:24Z] Prefilter complete: kept=1099 txt=/app/data/processed/digital_first_20260314_013207.txt csv=/app/data/processed/digital_first_20260314_013207.csv

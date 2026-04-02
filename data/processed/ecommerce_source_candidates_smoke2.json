@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-16T11:56:49.691688+00:00",
+  "total_records": 206,
+  "sources": [
+    "1800dtc",
+    "dtcetc"
+  ],
+  "source_counts": {
+    "1800dtc": 11,
+    "dtcetc": 195
+  },
+  "explicit_shopify_signals": 1,
+  "outputs": {
+    "csv": "data\\processed\\ecommerce_source_candidates_smoke2.csv",
+    "txt": "data\\processed\\ecommerce_source_candidates_smoke2.txt",
+    "jsonl": "data\\processed\\ecommerce_source_candidates_smoke2.jsonl"
+  }
+}

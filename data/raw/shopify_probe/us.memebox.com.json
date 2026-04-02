@@ -1,0 +1,1 @@
+{"checked_url": "https://us.memebox.com/", "final_url": "https://us.memebox.com/", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'us.memebox.com'. (_ssl.c:1081)", "checked_at": "2026-03-16T14:34:01.770578+00:00"}

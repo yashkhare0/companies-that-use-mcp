@@ -1,0 +1,1 @@
+{"checked_url": "https://inkbox.com/", "final_url": "https://inkbox.com/", "http_status": "403", "headers": {}, "html_excerpt": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n", "fetch_error": "HTTPError: 403", "checked_at": "2026-03-16T14:33:06.473874+00:00"}

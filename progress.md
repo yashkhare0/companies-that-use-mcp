@@ -1,85 +1,102 @@
 # Progress Log
 
-## Session: 2026-03-12 to 2026-03-13
+## Session: 2026-03-15
 
-### Phase 1: Discovery
+### Strategy Selection
 - **Status:** complete
-- Confirmed the repo's MCP/API verification flow works.
-- Confirmed SQLite is usable as an intermediate store.
-- Confirmed the original bottleneck was candidate sourcing, not scan logic.
+- User chose the balanced acquisition path:
+  - combine official sources plus broader discovery
+  - then score, dedupe, and filter aggressively
 
-### Phase 2: Source Expansion
+### Repo Inspection
 - **Status:** complete
-- Added `build_portfolio_candidates.py`.
-- Established `data/raw` and `data/processed` as the canonical data layout.
-- Implemented trusted official source adapters for:
-  - `seedcamp`
-  - `point_nine`
-  - `hv_capital`
-  - `speedinvest`
-  - `project_a`
-  - `htgf`
-- Added HTGF via official WordPress portfolio collection data plus official detail-page website extraction.
+- Confirmed the current command layout:
+  - `app/cli.py`
+  - `app/commands/*.py`
+  - `app/python/build_portfolio_candidates.py`
+- Confirmed the current ingestion/output pattern:
+  - Python builds structured source candidates
+  - Ruby handles ICP/prefilter/shortlist steps
+  - `pipeline.py` orchestrates multi-step workflows
 
-### Phase 3: Candidate Scoring & Pre-Vetting
+### Design Direction
 - **Status:** complete
-- Updated `build_icp_candidates.rb` to ingest latest portfolio candidates and boost Germany/EU signals.
-- Updated `select_pre_vetted_candidates.rb` to include `htgf` and use source-aware minimum scores.
-- Rebuilt the unified candidate set:
-  - `6982` unique candidates
-- Ran strict digital-first prefilter:
-  - `3004` kept
-- Built updated pre-vetted cohort:
-  - `491` selected
+- Chosen implementation shape:
+  - `ecommerce` CLI command family
+  - candidate discovery module
+  - Shopify detection module
+  - pipeline orchestration command
 
-### Phase 4: Live Verification
+### Implementation
 - **Status:** complete
-- Ran live scan:
-  - Run ID: `20260313T104339Z-165a0986`
-  - Input: `491`
-  - High: `306`
-  - Excluded: `18`
-  - Low: `167`
-- Exported:
-  - `data/processed/pre_vetted_portfolio_expand_eu_high.csv`
-  - `data/processed/pre_vetted_portfolio_expand_eu_excluded.csv`
+- Added:
+  - `app/commands/ecommerce.py`
+  - `app/python/build_ecommerce_candidates.py`
+  - `app/python/detect_shopify.py`
+  - `app/python/finalize_non_shopify_ecommerce.py`
+- Updated:
+  - `app/cli.py`
+  - `app/config.py`
+  - `app/commands/pipeline.py`
+  - `README.md`
+  - `docs/plans/2026-03-15-ecommerce-discovery-design.md`
 
-### Phase 5: Results
+### Verification
 - **Status:** complete
-- Latest official portfolio inventory:
-  - `1562` unique domains
-- Verified high-priority source breakdown:
-  - `seedcamp`: `97`
-  - `speedinvest`: `62`
-  - `htgf`: `54`
-  - `point_nine`: `23`
-  - `project_a`: `22`
-  - `hv_capital`: `16`
-  - YC combined: `32`
-- Germany-located verified prospects in latest high file:
-  - `101`
+- Verified locally:
+  - `py_compile` on new Python modules
+  - `python main.py ecommerce build --help`
+  - `python main.py pipeline ecommerce-refresh --help`
+  - `python main.py ecommerce build --output-prefix data/processed/ecommerce_candidates_smoke2 --min-score 6`
+- Verified end to end:
+  - `python main.py pipeline ecommerce-refresh --input data/final/active_data.csv --min-score 6`
+- Current first-pass result:
+  - `58` ecommerce candidates
+  - `6` Shopify detections
+  - `52` final non-Shopify ecommerce rows
+  - `12` rows marked `shopify_review_needed=1`
 
-## Files Created or Updated
-- `build_portfolio_candidates.py`
-- `build_icp_candidates.rb`
-- `select_pre_vetted_candidates.rb`
-- `task_plan.md`
-- `findings.md`
-- `progress.md`
+### Exa-Assisted Source Expansion
+- **Status:** complete
+- Confirmed `exa` exists in the MCP catalog and configured the server secret.
+- Used Exa to identify structured public ecommerce directories worth ingesting.
+- Implemented:
+  - `app/python/build_ecommerce_sources.py`
+- Updated:
+  - `app/commands/ecommerce.py`
+  - `app/config.py`
+  - `README.md`
+- Verified locally:
+  - `python main.py ecommerce build-sources --help`
+  - `python main.py ecommerce build-sources --output-prefix data/processed/ecommerce_source_candidates_smoke --dtcetc-pages 5`
+- Result from first `dtcetc` smoke run:
+  - `489` total candidates
+  - `487` net-new versus `data/final/active_data.csv`
 
-## Important Outputs
-- `data/processed/portfolio_candidates_latest.csv`
-- `data/processed/icp_portfolio_expand_eu.csv`
-- `data/processed/digital_first_20260313_085757.csv`
-- `data/processed/pre_vetted_portfolio_expand_eu.csv`
-- `data/processed/pre_vetted_portfolio_expand_eu_high.csv`
-- `data/processed/pre_vetted_portfolio_expand_eu_excluded.csv`
+### Multi-Source Ecommerce Directory Refresh
+- **Status:** complete
+- Added:
+  - `1800dtc` source parsing to `app/python/build_ecommerce_sources.py`
+  - threaded Shopify probing via `--workers`
+  - source-specific finalize sync targets
+  - `pipeline ecommerce-source-refresh`
+- Verified locally:
+  - `python main.py ecommerce build-sources --help`
+  - `python main.py ecommerce detect-shopify --help`
+  - `python main.py ecommerce finalize --help`
+  - `python main.py pipeline ecommerce-source-refresh --help`
+  - `python main.py ecommerce build-sources --output-prefix data/processed/ecommerce_source_candidates_smoke2 --dtcetc-pages 2 --1800dtc-pages 2 --refresh`
+  - `python main.py ecommerce detect-shopify --input data/processed/ecommerce_source_candidates_smoke2.csv --output-prefix data/processed/shopify_source_detection_smoke --limit 20 --workers 6 --refresh`
+  - `python main.py ecommerce finalize --candidates data/processed/ecommerce_source_candidates_smoke2.csv --detections data/processed/shopify_source_detection_smoke.csv --output-prefix data/final/non_shopify_ecommerce_sources_smoke --latest-prefix data/final/non_shopify_ecommerce_sources_latest --canonical-prefix data/final/non_shopify_ecommerce_sources`
+- Full source pipeline run:
+  - `python main.py pipeline ecommerce-source-refresh --dtcetc-pages 24 --1800dtc-pages 40 --workers 12 --refresh`
+- Result from the full combined source run:
+  - `2,397` source candidates
+  - `2,383` net-new versus `data/final/active_data.csv`
+  - `216` Shopify detections
+  - `2,181` source-based non-Shopify rows
 
-## Errors / Deviations
-- HTGF `admin-ajax` direct POST did not return usable content; moved to the official WP REST endpoint.
-- Portfolio harvesting required a longer timeout once HTGF detail pages were added.
-
-## Next Likely Work
-- Add another trusted EU source only if it exposes official company websites clearly.
-- Prioritize Balderton, B2venture, or another Germany/EU-heavy source for adapter investigation.
-- Add a clean JSONL export shaped specifically for Convex ingestion.
+## Current Known Constraints
+- The current dataset does not expose platform-tech attribution, so Shopify suppression requires live fetches or cached HTML analysis.
+- Broad commerce keyword matching is noisy; we need positive and negative scoring rather than a naive filter.
+- Network access may be required to run the Shopify-detection stage end to end.

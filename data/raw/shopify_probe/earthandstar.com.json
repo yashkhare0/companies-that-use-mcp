@@ -1,0 +1,1 @@
+{"checked_url": "https://earthandstar.com/", "final_url": "https://earthandstar.com/", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'earthandstar.com'. (_ssl.c:1081)", "checked_at": "2026-03-16T14:32:43.373306+00:00"}

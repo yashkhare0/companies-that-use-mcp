@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-14T23:32:45.613581+00:00",
+  "total_records": 92,
+  "review_needed": 0,
+  "outputs": {
+    "csv": "data\\final\\non_shopify_ecommerce_smoke.csv",
+    "txt": "data\\final\\non_shopify_ecommerce_smoke.txt",
+    "jsonl": "data\\final\\non_shopify_ecommerce_smoke.jsonl"
+  }
+}

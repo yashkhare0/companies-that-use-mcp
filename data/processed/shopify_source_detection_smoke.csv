@@ -1,0 +1,21 @@
+domain,checked_url,final_url,http_status,fetch_error,shopify_detected,shopify_confidence,shopify_signals,checked_at
+bearaby.com,https://bearaby.com/,https://bearaby.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.194897+00:00
+bespokepost.com,https://www.bespokepost.com/,https://www.bespokepost.com/,403,HTTPError: 403,0,none,,2026-03-16T12:47:25.195499+00:00
+carawayhome.com,https://www.carawayhome.com/,https://www.carawayhome.com/,429,HTTPError: 429,0,none,,2026-03-16T12:47:25.195646+00:00
+casper.com,https://casper.com/,https://casper.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|shopify-payment-button|/cdn/shop/|shop.app|shopify-section|shopify-features|shopify-pay,2026-03-16T12:47:25.195800+00:00
+classpass.com,https://classpass.com/corporate-wellness,https://classpass.com/corporate-wellness,200,,0,none,,2026-03-16T12:47:25.265691+00:00
+cometeer.com,https://cometeer.com/,https://cometeer.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.243401+00:00
+drinkhalfday.com,https://drinkhalfday.com/,https://drinkhalfday.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.417344+00:00
+glossier.com,https://www.glossier.com/,https://www.glossier.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.442490+00:00
+rejuvia.co,https://www.rejuvia.co/,https://www.rejuvia.co/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.591009+00:00
+ridge.com,https://ridge.com/,https://ridge.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-features,2026-03-16T12:47:25.592564+00:00
+thepearlsource.com,https://www.thepearlsource.com/,https://www.thepearlsource.com/,200,,0,none,,2026-03-16T12:47:25.595790+00:00
+100percentpure.com,https://100percentpure.com,https://www.100percentpure.com/em-cgi/btag/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.624362+00:00
+11honore.com,https://11honore.com,https://www.eloquii.com/c/11Honore.html,200,,0,none,,2026-03-16T12:47:25.667638+00:00
+12parsecsdesigns.com,https://www.12parsecsdesigns.com,https://www.12parsecsdesigns.com,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.697090+00:00
+1999beauty.com,https://1999beauty.com/,https://1999beauty.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:25.847444+00:00
+19no5.se,https://www.19no5.se,https://19no5.se/,404,HTTPError: 404,0,none,,2026-03-16T12:47:25.865854+00:00
+23andme.com,https://www.23andme.com/,https://www.23andme.com/en-int/,200,,0,none,,2026-03-16T12:47:25.990504+00:00
+2modern.com,https://2modern.com,https://www.2modern.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-16T12:47:26.135357+00:00
+32degrees.com,https://32degrees.com,https://www.32degrees.com/,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features|shopify-pay,2026-03-16T12:47:26.273676+00:00
+456skin.com,https://www.456skin.com/,https://456skin.com/,200,,0,none,,2026-03-16T12:47:26.429525+00:00

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-16T14:34:10.304299+00:00",
+  "total_records": 2397,
+  "detected": 216,
+  "fetch_errors": 1814,
+  "outputs": {
+    "csv": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\shopify_source_detection_run.csv",
+    "jsonl": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\shopify_source_detection_run.jsonl"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-16T14:32:14.107315+00:00",
+  "total_records": 2397,
+  "sources": [
+    "1800dtc",
+    "dtcetc"
+  ],
+  "source_counts": {
+    "1800dtc": 141,
+    "dtcetc": 2256
+  },
+  "explicit_shopify_signals": 8,
+  "outputs": {
+    "csv": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\ecommerce_source_candidates_run.csv",
+    "txt": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\ecommerce_source_candidates_run.txt",
+    "jsonl": "B:\\projects\\research\\companies-that-use-mcp\\data\\processed\\ecommerce_source_candidates_run.jsonl"
+  }
+}

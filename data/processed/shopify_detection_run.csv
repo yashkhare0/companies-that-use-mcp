@@ -1,0 +1,59 @@
+domain,checked_url,final_url,http_status,fetch_error,shopify_detected,shopify_confidence,shopify_signals,checked_at
+dafiti.com.br,https://www.dafiti.com.br/,https://www.dafiti.com.br/,200,,0,none,,2026-03-14T23:32:29.747801+00:00
+enamora.de,https://enamora.de,https://enamora.de,200,,0,none,,2026-03-14T23:32:31.212260+00:00
+pamono.com,https://www.pamono.com/,https://www.pamono.com/,200,,0,none,,2026-03-14T23:32:31.629952+00:00
+depop.com,https://www.depop.com/,https://www.depop.com/,403,HTTPError: 403,0,none,,2026-03-14T23:32:56.256486+00:00
+ebay.com,https://www.ebay.com/,https://www.ebay.com/,200,,0,none,,2026-03-14T23:32:56.383818+00:00
+fashionforhome.de,https://fashionforhome.de,https://fashionforhome.de,403,HTTPError: 403,0,none,,2026-03-14T23:32:57.633353+00:00
+lazada.com.ph,https://www.lazada.com.ph/,https://www.lazada.com.ph/,200,,0,none,,2026-03-14T23:32:58.119156+00:00
+lazada.sg,https://www.lazada.sg/,https://www.lazada.sg/,200,,0,none,,2026-03-14T23:33:01.900778+00:00
+shpock.com,https://www.shpock.com/de-de,https://www.shpock.com/de-de,200,,0,none,,2026-03-14T23:33:04.047880+00:00
+21diamonds.de,https://www.21diamonds.de/,https://www.21diamonds.de/,200,,0,none,,2026-03-14T23:33:06.137511+00:00
+lamoda.ru,https://www.lamoda.ru/,https://www.lamoda.ru/,401,HTTPError: 401,0,none,,2026-03-14T23:33:06.912295+00:00
+poshmark.com,https://poshmark.com,https://poshmark.com,200,,0,none,,2026-03-14T23:33:07.952051+00:00
+westwing.de,https://www.westwing.de/,https://www.westwing.de/,200,,1,high,cdn.shopify.com|/cdn/shop/,2026-03-14T23:33:10.056728+00:00
+whatnot.com,https://www.whatnot.com/,https://www.whatnot.com/,200,,1,medium,myshopify.com,2026-03-14T23:32:28.973854+00:00
+7trends.de,https://www.7trends.de/,https://www.7trends.de/,200,,0,none,,2026-03-14T23:33:10.544883+00:00
+auctionata.com,https://auctionata.com,https://auctionata.com,200,,0,none,,2026-03-14T23:32:29.586710+00:00
+delli.market,https://delli.market,https://delli.market,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shopify-section|shopify-features,2026-03-14T23:33:14.463293+00:00
+doordash.com,https://www.doordash.com/,https://www.doordash.com/,403,HTTPError: 403,0,none,,2026-03-14T23:33:15.494220+00:00
+ebay.com.au,https://www.ebay.com.au/,https://www.ebay.com.au/,200,,0,none,,2026-03-14T23:33:15.625689+00:00
+felmo.de,https://felmo.de,https://felmo.de,200,,0,none,,2026-03-14T23:33:17.580818+00:00
+korodrogerie.de,https://www.korodrogerie.de/,https://www.korodrogerie.de/,200,,0,none,,2026-03-14T23:33:17.983423+00:00
+loots.com,https://loots.com,https://loots.com,200,,0,none,,2026-03-14T23:33:18.232451+00:00
+pubnative.net,https://verve.com/performance-marketplace-for-publishers/,https://verve.com/performance-marketplace-for-publishers/,200,,0,none,,2026-03-14T23:33:18.710094+00:00
+spoonflower.com,https://www.spoonflower.com/,https://www.spoonflower.com/,200,,0,none,,2026-03-14T23:33:19.719226+00:00
+ulta.com,https://www.ulta.com/,https://www.ulta.com/,200,,0,none,,2026-03-14T23:33:22.276585+00:00
+wayfair.com,https://www.wayfair.com/,https://www.wayfair.com/,200,,0,none,,2026-03-14T23:33:23.467434+00:00
+ebay.ca,https://www.ebay.ca/,https://www.ebay.ca/,200,,0,none,,2026-03-14T23:33:27.516753+00:00
+home24.de,https://home24.de,https://home24.de,403,HTTPError: 403,0,none,,2026-03-14T23:33:30.481621+00:00
+kongessloejd.com,https://kongessloejd.com,https://kongessloejd.com,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shopify-section|shopify-features,2026-03-14T23:33:30.567196+00:00
+momox.de,https://www.momox.de/,https://www.momox.de/,403,HTTPError: 403,0,none,,2026-03-14T23:33:03.934714+00:00
+botika.io,https://botika.com/,https://botika.com/,200,,0,none,,2026-03-14T23:33:43.086664+00:00
+clubzero.co,https://www.clubzero.co/,https://www.clubzero.co/,200,,0,none,,2026-03-14T23:33:43.290246+00:00
+handshake.com,https://www.shopify.com/blog/wholesale-suppliers,https://www.shopify.com/blog/wholesale-suppliers,200,,1,high,shopify_text,2026-03-14T23:33:44.498515+00:00
+hundeland.de,https://www.petspremium.de/hl-shop-geschlossen-weiterleitung-pp,https://www.petspremium.de/hl-shop-geschlossen-weiterleitung-pp,200,,0,none,,2026-03-14T23:33:46.990150+00:00
+indiatimes.com,https://www.indiatimes.com/,https://www.indiatimes.com/,200,,0,none,,2026-03-14T23:33:47.442331+00:00
+mercari.com,https://www.mercari.com/,https://www.mercari.com/,403,HTTPError: 403,0,none,,2026-03-14T23:33:51.934021+00:00
+outfittery.de,https://outfittery.de,https://outfittery.de,200,,0,none,,2026-03-14T23:33:52.015976+00:00
+thestorefront.com,https://www.thestorefront.com/,https://www.thestorefront.com/,200,,0,none,,2026-03-14T23:33:54.229707+00:00
+vinterior.co,https://www.vinterior.co/,https://www.vinterior.co/,200,,0,none,,2026-03-14T23:33:55.461015+00:00
+bol.com,https://www.bol.com/,https://www.bol.com/,403,HTTPError: 403,0,none,,2026-03-14T23:33:13.295671+00:00
+care.com,https://www.care.com/,https://www.care.com/,200,,0,none,,2026-03-14T23:33:57.069550+00:00
+cherrypick.co,https://www.cherrypick.co/,https://www.cherrypick.co/,200,,0,none,,2026-03-14T23:33:58.745842+00:00
+classmarkets.com,https://www.classmarkets.com/,https://www.classmarkets.com/,200,,0,none,,2026-03-14T23:33:58.978599+00:00
+dawanda.com,https://www.etsy.com/de,https://www.etsy.com/de,403,HTTPError: 403,0,none,,2026-03-14T23:33:13.807212+00:00
+eatingpoint.be,https://www.eatingpoint.be/,https://www.eatingpoint.be/,200,,0,none,,2026-03-14T23:33:59.228744+00:00
+kyte.com,https://saw.com/buy?domain=kyte.com,https://saw.com/buy?domain=kyte.com,200,,0,none,,2026-03-14T23:34:03.837112+00:00
+martie.com,https://martie.com,https://martie.com,200,,1,high,cdn.shopify.com|myshopify.com|shopify.theme|shopify.routes|shopify.shop|/cdn/shop/|shop.app|shopify-section|shopify-features,2026-03-14T23:34:04.432140+00:00
+treatwell.com,https://treatwell.com,https://treatwell.com,200,,0,none,,2026-03-14T23:34:09.451619+00:00
+asgoodasnew.com,https://asgoodasnew.de,https://asgoodasnew.de,200,,0,none,,2026-03-14T23:33:24.310526+00:00
+cafepress.com,https://cafepress.com,https://cafepress.com,403,HTTPError: 403,0,none,,2026-03-14T23:34:10.074739+00:00
+everdine.co.uk,https://everdine.co.uk,https://everdine.co.uk,403,HTTPError: 403,0,none,,2026-03-14T23:34:10.183816+00:00
+vaniday.com,https://www.vaniday.com/index.php/,https://www.vaniday.com/index.php/,200,,0,none,,2026-03-14T23:33:40.705451+00:00
+clipboardhealth.com,https://www.clipboardhealth.com/,https://www.clipboardhealth.com/,200,,0,none,,2026-03-14T23:34:11.707294+00:00
+deliveryhero.com,https://www.deliveryhero.com/,https://www.deliveryhero.com/,403,HTTPError: 403,0,none,,2026-03-14T23:33:43.753684+00:00
+glossybox.co.uk,https://www.glossybox.co.uk/,https://www.glossybox.co.uk/,200,,0,none,,2026-03-14T23:34:12.202958+00:00
+gq.com,https://www.gq.com/,https://www.gq.com/,200,,0,none,,2026-03-14T23:34:12.500112+00:00
+hellofresh.com,https://www.hellofresh.com/,https://www.hellofresh.com/,200,,0,none,,2026-03-14T23:34:12.765452+00:00
+rival.tech,https://www.rival.tech/,https://www.rival.tech/,200,,0,none,,2026-03-14T23:33:52.713104+00:00

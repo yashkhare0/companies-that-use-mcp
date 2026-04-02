@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-13T21:55:10Z",
+  "run_id": "20260313T200522Z-983850e1",
+  "rows": 6982,
+  "scanned_in_run": 1275,
+  "scanned_any_time": 6982,
+  "website_checks": 6982,
+  "website_meta": 5686,
+  "metadata_csv": "data/processed/icp_portfolio_expand_eu.csv",
+  "output_csv": "data/master/master_data.csv",
+  "latest_csv": "/app/data/master/master_data_latest.csv"
+}

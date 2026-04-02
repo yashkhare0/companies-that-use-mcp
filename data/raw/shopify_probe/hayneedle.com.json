@@ -1,0 +1,1 @@
+{"checked_url": "https://hayneedle.com", "final_url": "https://hayneedle.com", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)", "checked_at": "2026-03-16T14:33:00.425782+00:00"}

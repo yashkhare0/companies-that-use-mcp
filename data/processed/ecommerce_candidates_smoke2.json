@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-03-14T23:35:49.542415+00:00",
+  "total_records": 60,
+  "confidence_counts": {
+    "high": 15,
+    "medium": 45,
+    "low": 0
+  },
+  "explicit_shopify_signals": 1,
+  "outputs": {
+    "csv": "data\\processed\\ecommerce_candidates_smoke2.csv",
+    "txt": "data\\processed\\ecommerce_candidates_smoke2.txt",
+    "jsonl": "data\\processed\\ecommerce_candidates_smoke2.jsonl"
+  }
+}

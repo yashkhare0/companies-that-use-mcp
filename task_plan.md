@@ -1,62 +1,101 @@
-# Task Plan: Expand Verified MCP Prospecting
+# Task Plan: Non-Shopify Ecommerce Discovery Pipeline
 
 ## Goal
-Build a larger, source-backed prospect pipeline for digital-first companies with public API signals and no public MCP, with stronger EU and Germany coverage and outputs that stay usable in SQLite now and a future database later.
+Build a balanced discovery pipeline that can surface active, high-quality B2C ecommerce companies worldwide while suppressing Shopify-associated companies.
 
 ## Current Phase
-Phase 5
+Phase 6
 
 ## Phases
 
-### Phase 1: Discovery
-- [x] Inspect current scanner, DB, and candidate-generation flow
-- [x] Confirm current bottleneck is candidate sourcing, not MCP detection
-- [x] Create raw/processed data layout under `data/`
+### Phase 1: Re-baseline Current State
+- [x] Confirm what the current active-company dataset can and cannot tell us
+- [x] Inspect the existing CLI, ingestion, and downstream scoring flow
+- [x] Identify the main gap: the repo lacks ecommerce-specific discovery and Shopify-tech suppression
 - **Status:** complete
 
-### Phase 2: Source Expansion
-- [x] Add official portfolio-source harvesting
-- [x] Keep only sources that expose trustworthy company websites
-- [x] Add stronger EU/Germany coverage
+### Phase 2: Design Balanced Acquisition Strategy
+- [x] Choose a balanced acquisition strategy
+- [x] Define the source buckets, candidate schema, and output artifacts
+- [x] Define Shopify-association rules and false-positive controls
 - **Status:** complete
 
-### Phase 3: ICP Filtering
-- [x] Merge top-domain seeds, YC, curated list, and official portfolio sources
-- [x] Apply strict digital-first prefiltering
-- [x] Bias scoring toward EU/Germany without relaxing verification
+### Phase 3: Implement Ecommerce Discovery Commands
+- [x] Add a first-class CLI surface for ecommerce discovery
+- [x] Add candidate-building logic from mixed signals in the active dataset
+- [x] Add live Shopify fingerprint detection against shortlisted domains
 - **Status:** complete
 
-### Phase 4: Verification
-- [x] Run live API/MCP verification on the expanded pre-vetted cohort
-- [x] Export verified prospects and MCP exclusions
-- [x] Measure source-level lift
+### Phase 4: Add Pipeline Orchestration
+- [x] Add a multi-step ecommerce refresh pipeline
+- [x] Sync canonical latest artifacts for reuse
+- [x] Keep output paths explicit and operator-friendly
 - **Status:** complete
 
-### Phase 5: Delivery
-- [x] Update planning files with latest run data
-- [x] Summarize verified lift and strongest next source additions
+### Phase 5: Verify On A Small Sample
+- [x] Run help and syntax verification locally
+- [x] Run a small sample candidate build
+- [x] Attempt a small live Shopify-detection pass if network access is available
+- **Status:** complete
+
+### Phase 6: Record Results
+- [x] Write the design doc
+- [x] Update findings and progress with the implemented workflow
+- [x] Summarize remaining limits and next source additions
+- **Status:** complete
+
+### Phase 7: Exa-Assisted Source Expansion
+- [x] Confirm Exa MCP availability and configure it
+- [x] Use Exa to identify promising public ecommerce directories
+- [x] Implement the first Exa-sourced public directory adapter
+- [x] Measure net-new discovery against the active dataset
+- **Status:** complete
+
+### Phase 8: Multi-Source Ecommerce Directory Refresh
+- [x] Add a second public directory adapter from Exa-assisted source discovery
+- [x] Add a dedicated source-refresh pipeline for source candidates and Shopify filtering
+- [x] Verify the combined source crawl and run it end to end
 - **Status:** complete
 
 ## Key Questions
-1. Which official VC/accelerator sources expose company websites cleanly enough to trust?
-2. How much verified prospect lift comes from EU/Germany-heavy sources?
-3. Which next sources are worth implementing without raising false positives?
+1. How do we discover ecommerce companies at useful global breadth without depending on a single paid dataset?
+2. How do we identify B2C-style commerce versus ecommerce tooling, marketplaces for enterprises, or adjacent consumer apps?
+3. How do we suppress Shopify associations with enough confidence to be useful, while keeping false positives low?
 
 ## Decisions Made
 | Decision | Rationale |
 |----------|-----------|
-| Use Python for portfolio harvesting | Easier to automate official portfolio pages and structured source adapters |
-| Trust only official source pages that expose a company website directly or via an official detail page | Keeps the prospect set tighter and avoids guessed-domain false positives |
-| Add HTGF via official WordPress REST/detail pages | Strong Germany/EU coverage with reliable structured data |
-| Keep MCP verification in the existing Ruby scanner | The repo already handles live MCP/API validation correctly |
+| Use a balanced acquisition strategy | The user asked for breadth beyond the current dataset, but pure breadth-first scraping would create too much cleanup cost |
+| Keep the new work as a first-class CLI pipeline | The repo already has a clean command pattern; a one-off script would regress maintainability |
+| Separate ecommerce candidate discovery from Shopify detection | Discovery and platform suppression are different problems and should remain inspectable |
 
 ## Errors Encountered
 | Error | Attempt | Resolution |
 |-------|---------|------------|
-| PowerShell profile warnings on shell startup | ongoing | Use `login:false` where practical |
-| HTGF `admin-ajax` direct POST returned `0` | 1 | Switched to official WP REST collection endpoint plus detail-page fetches |
-| Python portfolio build exceeded short timeout | 1 | Reran with longer timeout and completed successfully |
+| Serena symbol overview failed with `Project._lsp_init_error` | 1 | Fell back to direct file reads for inspection |
 
 ## Notes
-- Current strongest official portfolio sources are `seedcamp`, `point_nine`, `hv_capital`, `speedinvest`, `project_a`, and now `htgf`.
-- Balderton and B2venture still need investigation before being added to the trusted-source set.
+- Existing active dataset is still useful as a seed universe, but it is not sufficient for "non-Shopify ecommerce" on its own.
+- The current repo already has a proven ingestion pattern for official-source discovery and a downstream scoring pipeline we can reuse.
+- Implemented shape:
+  - candidate builder
+  - Shopify detector
+  - final non-Shopify merge
+  - ecommerce pipeline orchestration
+- First-pass run results:
+  - `58` ecommerce candidates
+  - `6` Shopify detections
+  - `52` final non-Shopify rows
+  - `12` final rows still flagged for manual review due probe fetch errors
+- Exa-assisted source expansion results:
+  - added a `dtcetc` directory ingester
+  - first 5 pages yielded `489` source candidates
+  - overlap with current `active_data.csv`: `2`
+  - net-new domains from the new source: `487`
+- Combined source-refresh results:
+  - added `1800dtc` as a second directory adapter
+  - full source crawl yielded `2,397` source candidates
+  - overlap with current `active_data.csv`: `14`
+  - net-new domains from the source crawl: `2,383`
+  - Shopify probe flagged `216` Shopify-associated domains
+  - final source-based non-Shopify output: `2,181` rows

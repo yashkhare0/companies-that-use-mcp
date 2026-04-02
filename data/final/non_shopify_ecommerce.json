@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-14T23:36:34.365360+00:00",
+  "total_records": 52,
+  "review_needed": 12,
+  "outputs": {
+    "csv": "B:\\projects\\research\\companies-that-use-mcp\\data\\final\\non_shopify_ecommerce_run_20260314_233634.csv",
+    "txt": "B:\\projects\\research\\companies-that-use-mcp\\data\\final\\non_shopify_ecommerce_run_20260314_233634.txt",
+    "jsonl": "B:\\projects\\research\\companies-that-use-mcp\\data\\final\\non_shopify_ecommerce_run_20260314_233634.jsonl"
+  }
+}

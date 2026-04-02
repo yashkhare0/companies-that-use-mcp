@@ -13,4 +13,4 @@ RUN apt-get update \
 
 RUN gem install sqlite3 --no-document
 
-CMD ["ruby", "scan_to_db.rb", "--stats"]
+CMD ["ruby", "app/ruby/scan_to_db.rb", "--stats"]

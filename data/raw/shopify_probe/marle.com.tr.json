@@ -1,0 +1,1 @@
+{"checked_url": "https://marle.com.tr", "final_url": "https://marle.com.tr", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'marle.com.tr'. (_ssl.c:1081)", "checked_at": "2026-03-16T14:32:18.728008+00:00"}

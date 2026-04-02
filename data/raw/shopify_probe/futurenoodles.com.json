@@ -1,0 +1,1 @@
+{"checked_url": "https://futurenoodles.com/", "final_url": "https://futurenoodles.com/", "http_status": "", "headers": {}, "html_excerpt": "", "fetch_error": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'futurenoodles.com'. (_ssl.c:1081)", "checked_at": "2026-03-16T14:32:51.242896+00:00"}

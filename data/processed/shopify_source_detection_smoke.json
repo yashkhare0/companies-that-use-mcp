@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-16T12:47:27.602236+00:00",
+  "total_records": 20,
+  "detected": 12,
+  "fetch_errors": 3,
+  "outputs": {
+    "csv": "data\\processed\\shopify_source_detection_smoke.csv",
+    "jsonl": "data\\processed\\shopify_source_detection_smoke.jsonl"
+  }
+}
