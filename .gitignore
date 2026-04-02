@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+/__pycache__
+/data/raw
+/data/logs
+/data/processed
